@@ -1,0 +1,17 @@
+{
+  "index": 0,
+  "url": "https://sync.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Lists/MyCollection/Items/0",
+  "created_by": "system",
+  "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "date_updated": "2016-07-11T19:24:43Z",
+  "date_created": "2016-07-11T19:24:43Z",
+  "date_expires": null,
+  "service_sid": "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "data": {
+    "number": "001",
+    "attack": "49",
+    "name": "Bulbasaur"
+  },
+  "list_sid": "ESXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "revision": "0"
+}

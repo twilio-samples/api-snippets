@@ -1,0 +1,60 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "sims": [
+    {
+      "unique_name": "Portland-Storefront-POS",
+      "date_updated": "2017-04-12T00:19:47Z",
+      "voice_url": "https://my-pos-app.com/mobile-originated-voice-call",
+      "iccid": "8901263736208689635",
+      "voice_fallback_method": "POST",
+      "sid": "DEf40a1ce27dc52a81286ccf5fe0dd0c12",
+      "voice_fallback_url": null,
+      "status": "active",
+      "reset_status": null,
+      "commands_callback_method": "POST",
+      "rate_plan_sid": "WP4e63b4554e1a799bae3bc6cb64c6c5c6",
+      "voice_method": "POST",
+      "url": "https://wireless.twilio.com/v1/Sims/DEf40a1ce27dc52a81286ccf5fe0dd0c12",
+      "friendly_name": null,
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "date_created": "2017-02-17T04:13:27Z",
+      "commands_callback_url": "https://my-pos-app.com/mobile-originated-command",
+      "links": {
+        "rate_plan": "https://wireless.twilio.com/v1/RatePlans/WP4e63b4554e1a799bae3bc6cb64c6c5c6"
+      }
+    },
+    {
+      "unique_name": "SanFrancisco-Storefront-POS",
+      "date_updated": "2017-04-12T01:04:14Z",
+      "voice_url": "https://my-pos-app.com/mobile-originated-voice-call",
+      "iccid": "890126065735690622",
+      "voice_fallback_method": "POST",
+      "sid": "DEfb418e7786a50c5f7938677f6b724658",
+      "voice_fallback_url": null,
+      "status": "active",
+      "reset_status": "resetting",
+      "commands_callback_method": "POST",
+      "rate_plan_sid": "WP4e63b4554e1a799bae3bc6cb64c6c5c6",
+      "voice_method": "POST",
+      "url": "https://wireless.twilio.com/v1/Sims/DEfb418e7786a50c5f7938677f6b724658",
+      "friendly_name": null,
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "date_created": "2017-02-04T21:06:58Z",
+      "commands_callback_url": "https://my-pos-app.com/mobile-originated-command",
+      "links": {
+        "rate_plan": "https://wireless.twilio.com/v1/RatePlans/WP4e63b4554e1a799bae3bc6cb64c6c5c6"
+      }
+    }
+  ],
+  "meta": {
+    "page": 0,
+    "page_size": 50,
+    "first_page_url": "https://wireless.twilio.com/v1/Sims?PageSize=50&Page=0",
+    "previous_page_url": null,
+    "url": "https://wireless.twilio.com/v1/Sims?PageSize=50&Page=0",
+    "next_page_url": null,
+    "key": "sims"
+  }
+}

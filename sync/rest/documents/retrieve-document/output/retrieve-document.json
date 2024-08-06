@@ -1,0 +1,31 @@
+{
+  "unique_name": "NOW_PLAYING",
+  "url": "https://sync.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Documents/ETXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "created_by": "system",
+  "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "date_created": "2016-07-07T20:53:38Z",
+  "date_updated": "2016-07-07T20:53:38Z",
+  "date_expires": null,
+  "sid": "ETXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "service_sid": "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "data": {
+    "date_updated": "2016-07-06T12:46:38Z",
+    "genre": "Romance",
+    "showtimes": [
+      "12:30:00Z",
+      "14:45:00Z",
+      "15:30:00Z",
+      "17:45:00Z",
+      "20:30:00Z"
+    ],
+    "starring": [
+      "Lance Bass",
+      "Joey Fatone"
+    ],
+    "movie_title": "On The Line"
+  },
+  "revision": "0",
+  "links": {
+    "permissions": "https://sync.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Documents/ETXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Permissions"
+  }
+}

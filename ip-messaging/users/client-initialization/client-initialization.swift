@@ -1,0 +1,1 @@
+self.client = TwilioChatClient(token: token, properties: nil, delegate: self)
