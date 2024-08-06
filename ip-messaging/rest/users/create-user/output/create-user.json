@@ -1,0 +1,18 @@
+    {
+      "is_notifiable": null,
+      "date_updated": "2015-09-22T09:20:02Z",
+      "is_online": null,
+      "friendly_name": null,
+      "account_sid": "ACxxx",
+      "url": "https://chat.twilio.com/v2/Services/ISxxx/Users/USxxx",
+      "date_created": "2015-09-22T09:20:02Z",
+      "role_sid": null,
+      "sid": "USxxx",
+      "attributes": null,
+      "service_sid": "ISxxx",
+      "joined_channels_count": 0,
+      "identity": "allan",
+      "links": {
+        "user_channels": "https://chat.twilio.com/v2/Services/ISxxx/Users/USxxx/Channels"
+      }
+    }

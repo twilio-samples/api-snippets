@@ -1,0 +1,13 @@
+{
+  "channel_sid": "CHxxx",
+  "date_updated": "2017-04-28T09:23:32Z",
+  "last_consumption_timestamp": null,
+  "account_sid": "ACxxx",
+  "url": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Members/MBxxx",
+  "last_consumed_message_index": null,
+  "role_sid": "RLxxx",
+  "sid": "MBxxx",
+  "date_created": "2017-04-28T09:23:32Z",
+  "service_sid": "ISxxx",
+  "identity": "chat-user"
+}

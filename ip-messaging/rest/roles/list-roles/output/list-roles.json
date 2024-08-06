@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "page": 0,
+    "page_size": 50,
+    "first_page_url": "https://chat.twilio.com/v2/Services/ISxxx/Roles?PageSize=50&Page=0",
+    "previous_page_url": null,
+    "url": "https://chat.twilio.com/v2/Services/ISxxx/Roles?PageSize=1000&Page=0",
+    "next_page_url": null,
+    "key": "roles"
+  },
+  "roles": [
+    {
+      "date_updated": "2015-10-30T08:34:21Z",
+      "friendly_name": "service user",
+      "account_sid": "ACxxx",
+      "url": "https://chat.twilio.com/v2/Services/ISxxx/Roles/RLxxx",
+      "sid": "RLxxx",
+      "date_created": "2015-10-30T08:34:21Z",
+      "service_sid": "ISxxx",
+      "type": "deployment",
+      "permissions": [
+        "createChannel",
+        "joinChannel",
+        "editOwnUserInfo"
+      ]
+    }
+  ]
+}

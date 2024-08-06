@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "page": 0,
+    "page_size": 50,
+    "first_page_url": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Messages?PageSize=50&Page=0",
+    "previous_page_url": null,
+    "url": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Messages?PageSize=1000&Page=0",
+    "next_page_url": null,
+    "key": "messages"
+  },
+  "messages": [
+    {
+      "body": "test message",
+      "index": 0,
+      "channel_sid": "CHxxx",
+      "from": "system",
+      "date_updated": "2017-04-28T09:38:20Z",
+      "account_sid": "ACxxx",
+      "to": "CHxxx",
+      "date_created": "2017-04-28T09:38:20Z",
+      "url": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Messages/IMxxx",
+      "sid": "IMxxx",
+      "attributes": null,
+      "service_sid": "ISxxx",
+      "was_edited": false
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "services": [
+    {
+      "sid": "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "service_sid": "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "friendly_name": "My Awesome Service",
+      "date_created": "2015-08-24T15:28:32Z",
+      "date_updated": "2015-08-24T15:28:32Z",
+      "apn_credential_sid": "CRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "gcm_credential_sid": null,
+      "fcm_credential_sid": "CRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "default_apn_notification_protocol_version":"3",
+      "default_gcm_notification_protocol_version":"3",
+      "default_fcm_notification_protocol_version":"3",    
+      "facebook_messenger_page_id": null,
+      "messaging_service_sid": null,
+      "url": "https://notify.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "links": {
+        "bindings": "https://notify.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Bindings",
+        "notifications": "https://notify.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Notifications"
+      }
+    }
+  ],
+  "meta": {
+    "page": 0,
+    "page_size": 50,
+    "first_page_url": "https://notify.twilio.com/v1/Services?PageSize=50&Page=0",
+    "previous_page_url": null,
+    "url": "https://notify.twilio.com/v1/Services?PageSize=50&Page=0",
+    "next_page_url": null,
+    "key": "services"
+  }
+}

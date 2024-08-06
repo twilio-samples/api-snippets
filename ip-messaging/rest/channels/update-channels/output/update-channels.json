@@ -1,0 +1,21 @@
+{
+  "unique_name": "my-channel",
+  "members_count": 0,
+  "date_updated": "2017-04-28T08:54:32Z",
+  "friendly_name": "MyChannel2",
+  "created_by": "system",
+  "account_sid": "ACxxx",
+  "url": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx",
+  "date_created": "2017-04-28T08:54:32Z",
+  "sid": "CHxxx",
+  "attributes": "{}",
+  "service_sid": "ISxxx",
+  "type": "public",
+  "messages_count": 0,
+  "links": {
+    "messages": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Messages",
+    "invites": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Invites",
+    "members": "https://chat.twilio.com/v2/Services/ISxxx/Channels/CHxxx/Members",
+    "last_message": null
+  }
+}

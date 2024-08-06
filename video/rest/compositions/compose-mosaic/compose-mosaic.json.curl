@@ -1,0 +1,41 @@
+VIDEOLAYOUT=$(cat << EOF
+{
+    "interviewed": {
+        "height": 360,
+        "video_sources": [
+            "interviewed-video"
+        ],
+        "width": 480,
+        "x_pos": 400,
+        "y_pos": 180,
+        "z_pos": 2
+    },
+    "interviewers": {
+        "cells_excluded": [
+            4
+        ],
+        "height": 720,
+        "max_columns": 3,
+        "max_rows": 3,
+        "reuse": "show_newest",
+        "video_sources": [
+            "interviewer-*"
+        ],
+        "width": 1260,
+        "x_pos": 10,
+        "y_pos": 0,
+        "z_pos": 1
+    }
+}
+EOF
+)
+
+curl -X POST https://video.twilio.com/v1/Compositions \
+--data-urlencode "AudioSources=*" \
+--data-urlencode "AudioSourcesExcluded=advisor-audio" \
+--data-urlencode "VideoLayout=$VIDEOLAYOUT" \
+--data-urlencode "StatusCallback=https://www.example.com/callbacks" \
+--data-urlencode "Resolution=1280x720" \
+--data-urlencode "Format=mp4" \
+--data-urlencode "RoomSid=RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

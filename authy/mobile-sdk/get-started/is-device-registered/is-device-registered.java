@@ -1,0 +1,1 @@
+boolean isDeviceRegistered = twilioAuth.isDeviceRegistered()

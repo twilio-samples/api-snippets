@@ -1,0 +1,14 @@
+require 'twilio-ruby'
+
+# Get your Account SID, Auth Token, Service SID and Channel SID
+# from twilio.com/console
+# To set up environmental variables, see http://twil.io/secure
+account_sid = ENV['TWILIO_ACCOUNT_SID']
+auth_token = ENV['TWILIO_AUTH_TOKEN']
+service_sid = 'ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+client = Twilio::REST::Client.new(account_sid, auth_token)
+
+# Create the user
+user = client.chat.v2.services(service_sid)
+             .users.create(identity: 'IDENTITY')
+puts user

@@ -1,0 +1,1 @@
+let sharedTwilioAuth = TwilioAuth.sharedInstance()

@@ -1,0 +1,1 @@
+TwilioAuth *sharedTwilioAuth = [TwilioAuth sharedInstance];

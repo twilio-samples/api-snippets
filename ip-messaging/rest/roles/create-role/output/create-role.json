@@ -1,0 +1,14 @@
+  {
+    "date_updated": "2015-10-30T08:34:21Z",
+    "friendly_name": "my role",
+    "account_sid": "ACxxx",
+    "url": "https://chat.twilio.com/v2/Services/ISxxx/Roles/RLxxx",
+    "sid": "RLxxx",
+    "date_created": "2015-10-30T08:34:21Z",
+    "service_sid": "ISxxx",
+    "type": "channel",
+    "permissions": [
+      "leaveChannel",
+      "sendMesssage"
+    ]
+  }

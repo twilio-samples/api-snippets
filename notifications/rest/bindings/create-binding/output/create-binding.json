@@ -1,0 +1,18 @@
+{
+  "endpoint": "endpoint_id",
+  "notification_protocol_version": "3",
+  "tags": [
+    "preferred device",
+    "new user"
+  ],
+  "date_updated": "2017-01-31T13:02:47Z",
+  "address": "device_token",
+  "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "url": "https://notify.twilio.com/v1/Services/ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/Bindings/BSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "binding_type": "apn",
+  "sid": "BSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "date_created": "2017-01-31T13:02:47Z",
+  "service_sid": "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "credential_sid": null,
+  "identity": "00000001"
+}
