@@ -21,5 +21,5 @@ body = """{"CallSid":"CA1234567890ABCDE","Caller":"+12349013030"}"""
 # Store the X-Twilio-Signature header attached to the request as a variable
 twilio_signature = 'hqeF3G9Hrnv6/R0jOhoYDD2PPUs='
 
-# Check if the incoming signature is valid for your application URL and the incoming parameters
+# Check if the incoming signature is valid for your application URL and the incoming body
 print(validator.validate(url, body, twilio_signature))

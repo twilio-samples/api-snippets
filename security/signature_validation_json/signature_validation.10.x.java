@@ -22,7 +22,7 @@ public class Example {
     // Store the X-Twilio-Signature header attached to the request as a variable
     String twilioSignature = "hqeF3G9Hrnv6/R0jOhoYDD2PPUs=";
 
-    // Check if the incoming signature is valid for your application URL and the incoming parameters
+    // Check if the incoming signature is valid for your application URL and the incoming body
     System.out.println(validator.validate(url, body, twilioSignature));
   }
 }
