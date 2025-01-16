@@ -9,22 +9,16 @@ auth_token = ENV['TWILIO_AUTH_TOKEN']
 validator = Twilio::Security::RequestValidator.new(auth_token)
 
 # Store Twilio's request URL (the url of your webhook) as a variable
-url = 'https://example.com/myapp'
+url = 'https://example.com/myapp?bodySHA256=5ccde7145dfb8f56479710896586cb9d5911809d83afbe34627818790db0aec9'
 
-# Store the application/x-www-form-urlencoded params from Twilio's request as a variable
+# Store the application/json body from Twilio's request as a variable
 # In practice, this MUST include all received parameters, not a
 # hardcoded list of parameters that you receive today. New parameters
 # may be added without notice.
-params = {
-  'CallSid' => 'CA1234567890ABCDE',
-  'Caller'  => '+12349013030',
-  'Digits'  => '1234',
-  'From'    => '+12349013030',
-  'To'      => '+18005551212'
-}
+body = '{"CallSid":"CA1234567890ABCDE","Caller":"+12349013030"}'
 
 # Store the X-Twilio-Signature header attached to the request as a variable
-twilio_signature = 'Np1nax6uFoY6qpfT5l9jWwJeit0='
+twilio_signature = 'hqeF3G9Hrnv6/R0jOhoYDD2PPUs='
 
-# Check if the incoming signature is valid for your application URL and the incoming parameters
-puts validator.validate(url, params, twilio_signature)
+# Check if the incoming signature is valid for your application URL and the incoming body
+puts validator.validate(url, body, twilio_signature)
