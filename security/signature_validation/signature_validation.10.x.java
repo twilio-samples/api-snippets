@@ -5,10 +5,10 @@ import java.util.Map;
 import com.twilio.security.RequestValidator;
 
 public class Example {
+  // Your Auth Token from twilio.com/user/account
+  public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
+    
   public static void main(String[] args) {
-    // Your Auth Token from twilio.com/user/account
-    public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
-
     // Initialize the request validator
     RequestValidator validator = new RequestValidator(AUTH_TOKEN);
 
