@@ -19,7 +19,7 @@ url = 'https://example.com/myapp?bodySHA256=5ccde7145dfb8f56479710896586cb9d5911
 body = """{"CallSid":"CA1234567890ABCDE","Caller":"+12349013030"}"""
 
 # Store the X-Twilio-Signature header attached to the request as a variable
-twilio_signature = 'Np1nax6uFoY6qpfT5l9jWwJeit0='
+twilio_signature = 'hqeF3G9Hrnv6/R0jOhoYDD2PPUs='
 
 # Check if the incoming signature is valid for your application URL and the incoming parameters
-print(validator.validate(url, params, twilio_signature))
+print(validator.validate(url, body, twilio_signature))

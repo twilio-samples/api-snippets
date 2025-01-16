@@ -18,21 +18,17 @@ url = "https://example.com/myapp?bodySHA256=5ccde7145dfb8f56479710896586cb9d5911
 auth = HTTPDigestAuth('username', 'password')
 
 params = {}
+body = """{"CallSid":"CA1234567890ABCDE","Caller":"+12349013030"}"""
 
 def test_url(method, url, params, valid):
-    if method == "GET":
-        url = url + '?' + urllib.parse.urlencode(params)
-        params = {}
-
     if valid:
         signature = validator.compute_signature(url, params)
     else:
         signature = validator.compute_signature("http://invalid.com", params)
 
-    headers = {'X-Twilio-Signature': signature}
-    response = requests.request(method, url, headers=headers, data=params, auth=auth)
+    headers = {'X-Twilio-Signature': signature,'Content-Type: application/json'}
+    response = requests.request(method, url, headers=headers, data=body, auth=auth)
     print('HTTP {0} with {1} signature returned {2}'.format(method, 'valid' if valid else 'invalid', response.status_code))
-
 
 test_url('GET', url, params, True)
 test_url('GET', url, params, False)
