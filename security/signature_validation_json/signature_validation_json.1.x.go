@@ -28,5 +28,5 @@ func main() {
 	signature := "hqeF3G9Hrnv6/R0jOhoYDD2PPUs="
 
 	// Check if the incoming signature is valid for your application URL and the incoming parameters
-	fmt.Println(requestValidator.Validate(url, params, signature))
+	fmt.Println(requestValidator.ValidateBody(url, body, signature))
 }
