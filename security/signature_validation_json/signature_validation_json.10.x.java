@@ -1,35 +1,28 @@
 // Install the Java helper library from twilio.com/docs/java/install
-import java.util.HashMap;
-import java.util.Map;
-
 import com.twilio.security.RequestValidator;
 
 public class Example {
   // Your Auth Token from twilio.com/user/account
   public static final String AUTH_TOKEN = System.getenv("TWILIO_AUTH_TOKEN");
-    
+
   public static void main(String[] args) throws java.net.URISyntaxException {
     // Initialize the request validator
     RequestValidator validator = new RequestValidator(AUTH_TOKEN);
 
     // Store Twilio's request URL (the url of your webhook) as a variable
-    String url = "https://example.com/myapp";
+    // including all query parameters
+    String url = "https://example.com/myapp?bodySHA256=5ccde7145dfb8f56479710896586cb9d5911809d83afbe34627818790db0aec9";
 
-    // Store the application/x-www-form-urlencoded parameters from Twilio's request as a variable
+    // Store the application/json body from Twilio's request as a variable
     // In practice, this MUST include all received parameters, not a
     // hardcoded list of parameters that you receive today. New parameters
     // may be added without notice.
-    Map<String, String> params = new HashMap<>();
-    params.put("CallSid", "CA1234567890ABCDE");
-    params.put("Caller", "+12349013030");
-    params.put("Digits", "1234");
-    params.put("From", "+12349013030");
-    params.put("To", "+18005551212");
+    String body = "{\"CallSid\":\"CA1234567890ABCDE\",\"Caller\":\"+12349013030\"}";
 
     // Store the X-Twilio-Signature header attached to the request as a variable
-    String twilioSignature = "Np1nax6uFoY6qpfT5l9jWwJeit0=";
+    String twilioSignature = "hqeF3G9Hrnv6/R0jOhoYDD2PPUs=";
 
-    // Check if the incoming signature is valid for your application URL and the incoming parameters
-    System.out.println(validator.validate(url, params, twilioSignature));
+    // Check if the incoming signature is valid for your application URL and the incoming body
+    System.out.println(validator.validate(url, body, twilioSignature));
   }
 }

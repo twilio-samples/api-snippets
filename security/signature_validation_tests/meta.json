@@ -1,4 +1,4 @@
 {
-  "title": "Test Request Signature Validation",
+  "title": "Test Request Signature Validation (x-www-form-urlencoded body)",
   "type": "server"
 }
