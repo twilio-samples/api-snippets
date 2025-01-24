@@ -1,0 +1,72 @@
+curl -X POST 'https://content.twilio.com/v1/Content' \
+-H 'Content-Type: application/json' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
+-d '{
+   "friendly_name": "info_flow",
+   "language": "en",
+   "types": {
+  "twilio/flows": {
+    "body": "Wow do we have something super cool for you! Thanks for your interest. we have a helpful link there too.",
+    "button_text": "See flow",
+    "subtitle": "Finish flow",
+    "pages": [
+      {
+        "id": "id_one",
+        "next_page_id": "id_two",
+        "title": "Page 1",
+        "layout": [
+          {
+            "label": "Name",
+            "type": "SHORT_TEXT",
+            "text": "Question 1",
+            "required": true
+          },
+          {
+            "label": "Email",
+            "type": "SHORT_TEXT",
+            "text": "Question 2",
+            "input_type": "EMAIL"
+          },
+          {
+            "label": "Address",
+            "type": "LONG_TEXT",
+            "text": "Question 3"
+          }
+        ]
+      },
+      {
+        "id": "id_two",
+        "next_page_id": null,
+        "title": "Page 2",
+        "subtitle": "Subtitle of Page 2",
+        "layout": [
+          {
+            "label": "How did you find us?",
+            "type": "SINGLE_SELECT",
+            "options": "[{\"id\":\"ff\",\"title\":\"Friends and family\"},{\"id\":\"oo\",\"title\":\"Online\"},{\"id\":\"ip\",\"title\":\"In person\"}]"
+          },
+          {
+            "label": "What's your favorite number?",
+            "type": "MULTIPLE_SELECT",
+            "options": "[{\"id\":\"one\",\"title\":\"one one\"},{\"id\":\"two\",\"title\":\"two two\"},{\"id\":\"three\",\"title\":\"three three\"}]"
+          },
+          {
+            "type": "TEXT_BODY",
+            "text": "Go to [Google](https://www.google.com/) if you have any questions"
+          },
+          {
+            "type": "TEXT_CAPTION",
+            "text": "No seriously, go to [Google](https://www.google.com/) if you have any questions"
+          },
+          {
+            "label": "If other, tell us where",
+            "type": "SHORT_TEXT",
+            "text": "Question 6"
+          }
+        ]
+      }
+    ],
+    "type": "OTHER"
+  }
+}
+}'

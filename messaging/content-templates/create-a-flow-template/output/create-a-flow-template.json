@@ -1,0 +1,95 @@
+{
+    "account_sid": "ACXXXXXXXXXXXXX",
+    "date_created": "2025-01-22T22:35:25Z",
+    "date_updated": "2025-01-22T22:35:25Z",
+    "friendly_name": "info_flow",
+    "language": "en",
+    "links": {
+        "approval_create": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXX/ApprovalRequests/whatsapp",
+        "approval_fetch": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXX/ApprovalRequests"
+    },
+    "sid": "HXXXXXXXXXXXX",
+    "types": {
+        "twilio/flows": {
+            "body": "Wow do we have something super cool for you! Thanks for your interest. we have a helpful link there too.",
+            "button_text": "See flow",
+            "media_url": null,
+            "pages": [
+                {
+                    "id": "id_one",
+                    "layout": [
+                        {
+                            "input_type": "TEXT",
+                            "label": "Name",
+                            "name": null,
+                            "required": true,
+                            "text": "Question 1",
+                            "type": "SHORT_TEXT"
+                        },
+                        {
+                            "input_type": "EMAIL",
+                            "label": "Email",
+                            "name": null,
+                            "required": null,
+                            "text": "Question 2",
+                            "type": "SHORT_TEXT"
+                        },
+                        {
+                            "input_type": null,
+                            "label": "Address",
+                            "name": null,
+                            "required": null,
+                            "text": "Question 3",
+                            "type": "LONG_TEXT"
+                        }
+                    ],
+                    "next_page_id": "id_two",
+                    "subtitle": null,
+                    "title": "Page 1"
+                },
+                {
+                    "id": "id_two",
+                    "layout": [
+                        {
+                            "label": "How did you find us?",
+                            "name": null,
+                            "options": "[{\"id\":\"ff\",\"title\":\"Friends and family\"},{\"id\":\"oo\",\"title\":\"Online\"},{\"id\":\"ip\",\"title\":\"In person\"}]",
+                            "required": null,
+                            "type": "SINGLE_SELECT"
+                        },
+                        {
+                            "label": "What's your favorite number?",
+                            "name": null,
+                            "options": "[{\"id\":\"one\",\"title\":\"one one\"},{\"id\":\"two\",\"title\":\"two two\"},{\"id\":\"three\",\"title\":\"three three\"}]",
+                            "required": null,
+                            "type": "MULTIPLE_SELECT"
+                        },
+                        {
+                            "text": "Go to [Google](https://www.google.com/) if you have any questions",
+                            "type": "TEXT_BODY"
+                        },
+                        {
+                            "text": "No seriously, go to [Google](https://www.google.com/) if you have any questions",
+                            "type": "TEXT_CAPTION"
+                        },
+                        {
+                            "input_type": "TEXT",
+                            "label": "If other, tell us where",
+                            "name": null,
+                            "required": null,
+                            "text": "Question 6",
+                            "type": "SHORT_TEXT"
+                        }
+                    ],
+                    "next_page_id": null,
+                    "subtitle": "Subtitle of Page 2",
+                    "title": "Page 2"
+                }
+            ],
+            "subtitle": "Finish flow",
+            "type": "OTHER"
+        }
+    },
+    "url": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXX",
+    "variables": {}
+}
