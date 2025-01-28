@@ -46,7 +46,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
             "options": "[{\"id\":\"ff\",\"title\":\"Friends and family\"},{\"id\":\"oo\",\"title\":\"Online\"},{\"id\":\"ip\",\"title\":\"In person\"}]"
           },
           {
-            "label": "What's your favorite number?",
+            "label": "What is your favorite number?",
             "type": "MULTIPLE_SELECT",
             "options": "[{\"id\":\"one\",\"title\":\"one one\"},{\"id\":\"two\",\"title\":\"two two\"},{\"id\":\"three\",\"title\":\"three three\"}]"
           },
