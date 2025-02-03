@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Connect action="https://myhttpserver.com/connect_action">
+    <ConversationRelay url="wss://mywebsocketserver.com/websocket" welcomeGreeting="Hi! Ask me anything!" />
+  </Connect>
+</Response>
