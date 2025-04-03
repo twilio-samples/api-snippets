@@ -1,0 +1,23 @@
+curl -X POST 'https://content.stage.twilio.com/v1/Content' \
+-H 'Content-Type: application/json' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
+-d '{
+    "friendly_name": "twilio_pay_order_details",
+    "language": "en",
+    "types": {
+        "twilio/pay": {
+            "payment_id": "123451234512345",
+            "body": "i am a {{1}} pay template",
+            "merchant_name": "Twilio",
+            "country_code": "BR",
+            "currency_code": "BRL",
+            "items": "[{\"label\":\"Apple\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"3.00\"},{\"label\":\"Orange\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"2.99\"}]",
+            "pix": {
+                    "type": "ORDER_STATUS",
+                    "status": "processing"
+                },
+            "subtotal_amount": "5.99",
+            "total_amount": "5.99"
+        }
+    }
+}'
