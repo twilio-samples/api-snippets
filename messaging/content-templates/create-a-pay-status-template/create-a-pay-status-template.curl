@@ -1,8 +1,8 @@
-curl -X POST 'https://content.stage.twilio.com/v1/Content' \
+curl -X POST 'https://content.twilio.com/v1/Content' \
 -H 'Content-Type: application/json' \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
 -d '{
-    "friendly_name": "twilio_pay_order_details",
+    "friendly_name": "twilio_pay_order_status",
     "language": "en",
     "types": {
         "twilio/pay": {
