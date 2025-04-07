@@ -1,0 +1,38 @@
+{
+    "account_sid": "ACXXXXXXXXXXXX",
+    "date_created": "2025-04-07T23:28:22Z",
+    "date_updated": "2025-04-07T23:28:22Z",
+    "friendly_name": "twilio_pay_order_status",
+    "language": "en",
+    "links": {
+        "approval_create": "https://content.twilio.com/v1/Content/HX6ef38a5f4518c9bab2af102403de87b1/ApprovalRequests/whatsapp",
+        "approval_fetch": "https://content.twilio.com/v1/Content/HX6ef38a5f4518c9bab2af102403de87b1/ApprovalRequests"
+    },
+    "sid": "HXXXXXXXXXXXX",
+    "types": {
+        "twilio/pay": {
+            "body": "i am a {{1}} pay template",
+            "country_code": "BR",
+            "currency_code": "BRL",
+            "items": "[{\"label\":\"Apple\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"3.00\"},{\"label\":\"Orange\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"2.99\"}]",
+            "merchant_identifier": null,
+            "merchant_name": "Twilio",
+            "order_expiration": null,
+            "order_expiration_description": null,
+            "payment_id": "123451234512345",
+            "payment_url": null,
+            "pix": {
+                "code": null,
+                "key": null,
+                "key_type": null,
+                "status": "processing",
+                "type": "ORDER_STATUS"
+            },
+            "subtotal_amount": "5.99",
+            "total_amount": "5.99",
+            "total_label": null
+        }
+    },
+    "url": "https://content.twilio.com/v1/Content/HXXXXXXXXXX",
+    "variables": {}
+}
