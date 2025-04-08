@@ -1,0 +1,27 @@
+curl -X POST 'https://content.twilio.com/v1/Content' \
+-H 'Content-Type: application/json' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
+-d '{
+    "friendly_name": "twilio_pay_order_details",
+    "language": "en",
+    "types": {
+        "twilio/pay": {
+            "payment_id": "12345",
+            "body": "I am a pay template",
+            "merchant_name": "Twilio",
+            "country_code": "BR",
+            "currency_code": "BRL",
+            "items": "[{\"label\":\"Apple\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"3.00\"},{\"label\":\"Orange\",\"quantity\":\"1\",\"id\":\"apple\",\"amount\":\"2.99\"}]",
+            "pix": {
+                    "type": "ORDER_DETAILS",
+                    "code": "insert pix code here",
+                    "key": "+5511968526123",
+                    "key_type": "PHONE"
+                },
+            "subtotal_amount": "5.99",
+            "total_amount": "5.99",
+            "order_expiration": "1743800292",
+            "order_expiration_description": "Ends in 15 min"
+        }
+    }
+}'
