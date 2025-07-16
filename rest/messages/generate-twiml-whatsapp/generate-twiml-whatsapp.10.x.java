@@ -4,22 +4,22 @@ import com.twilio.twiml.messaging.Message;
 
 import static spark.Spark.*;
 
-public class SmsApp {
+public class WhatsAppApp {
     public static void main(String[] args) {
         get("/", (req, res) -> "Hello Web");
 
         post("/whatsapp", (req, res) -> {
             res.type("application/xml");
             Body body = new Body
-                    .Builder("Message received! Hello again from Twilio Whatsapp.")
+                    .Builder("Message received! Hello again from the Twilio Sandbox for WhatsApp.")
                     .build();
-            Message sms = new Message
+            Message whatsapp = new Message
                     .Builder()
                     .body(body)
                     .build();
             MessagingResponse twiml = new MessagingResponse
                     .Builder()
-                    .message(sms)
+                    .message(whatsapp)
                     .build();
             return twiml.toXml();
         });

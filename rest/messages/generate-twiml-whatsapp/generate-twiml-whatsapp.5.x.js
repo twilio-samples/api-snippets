@@ -6,7 +6,7 @@ const app = express();
 app.post('/whatsapp', (req, res) => {
   const twiml = new MessagingResponse();
 
-  twiml.message('Message received! Hello again from Twilio Whatsapp.');
+  twiml.message('Message received! Hello again from the Twilio Sandbox for WhatsApp.');
 
   res.type('text/xml').send(twiml.toString());
 });

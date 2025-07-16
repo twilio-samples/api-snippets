@@ -4,13 +4,13 @@ from twilio.twiml.messaging_response import MessagingResponse
 app = Flask(__name__)
 
 @app.route("/whatsapp", methods=['GET', 'POST'])
-def sms_reply():
+def whatsapp_reply():
     """Respond to incoming calls with a simple text message."""
     # Start our TwiML response
     resp = MessagingResponse()
 
     # Add a message
-    resp.message("Message received! Hello again from Twilio Whatsapp.")
+    resp.message("Message received! Hello again from the Twilio Sandbox for WhatsApp.")
 
     return str(resp)
 

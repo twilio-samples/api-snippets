@@ -13,7 +13,7 @@ namespace YourNewWebProject.Controllers
         public TwiMLResult Index()
         {
             var messagingResponse = new MessagingResponse();
-            messagingResponse.Message("Message received! Hello again from Twilio Whatsapp.");
+            messagingResponse.Message("Message received! Hello again from the Twilio Sandbox for WhatsApp.");
 
             return TwiML(messagingResponse);
         }

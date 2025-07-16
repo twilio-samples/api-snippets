@@ -12,7 +12,7 @@ func main() {
 
 	router.POST("/whatsapp", func(context *gin.Context) {
 		message := &twiml.MessagingMessage{
-			Body: "Message received! Hello again from Twilio Whatsapp.",
+			Body: "Message received! Hello again from the Twilio Sandbox for WhatsApp.",
 		}
 
 		twimlResult, err := twiml.Messages([]twiml.Element{message})

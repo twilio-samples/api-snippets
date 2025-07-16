@@ -4,7 +4,7 @@ require 'sinatra'
 # Respond to incoming calls with a simple text message
 post '/whatsapp' do
   twiml = Twilio::TwiML::MessagingResponse.new do |r|
-    r.message body: 'Message received! Hello again from Twilio Whatsapp.'
+    r.message body: 'Message received! Hello again from the Twilio Sandbox for WhatsApp.'
   end
 
   content_type 'text/xml'

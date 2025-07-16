@@ -5,5 +5,5 @@ require_once 'vendor/autoload.php'; // Loads the library
 use Twilio\TwiML\MessagingResponse;
 
 $response = new MessagingResponse();
-$response->message("Message received! Hello again from Twilio Whatsapp.");
+$response->message("Message received! Hello again from the Twilio Sandbox for WhatsApp.");
 print $response;
