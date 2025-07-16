@@ -1,0 +1,6 @@
+{
+  "testable": "false",
+  "type": "server",
+  "title": "Respond to an incoming WhatsApp message",
+  "description": "When the Twilio Sandbox for WhatsApp receives an incoming message, Twilio will send an HTTP request to your server. This code shows how your server can reply with a WhatsApp message using the Twilio helper library."
+}
