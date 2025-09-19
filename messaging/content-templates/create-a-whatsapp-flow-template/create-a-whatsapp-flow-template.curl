@@ -1,0 +1,18 @@
+curl -X POST 'https://content.twilio.com/v1/Content' \
+-H 'Content-Type: application/json' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
+-d '{
+   "friendly_name": "info_flow",
+   "language": "en","variables": {
+      "1": "abcd1234"
+    },
+    "types": {
+      "whatsapp/flows": {
+        "body": "Please take five minutes to answer this survey",
+        "button_text": "Begin survey",
+        "flow_id": "1232445823264765",
+        "flow_token": "{{1}}",
+        "flow_first_page_id": "QUESTION_ONE"
+      }
+    }
+}'
