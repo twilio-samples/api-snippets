@@ -20,7 +20,7 @@
             ],
             "body": null,
             "media": [
-                "https://twilio-cms-prod.s3.amazonaws.com/{{3}}"
+                "https://raw.githubusercontent.com/twilio-samples/api-snippets/main/_images/{{3}}"
             ],
             "subtitle": "To unsubscribe, reply Stop",
             "title": "Congratulations, you've reached Elite status! Add code {{1}} for 10% off."
@@ -33,6 +33,6 @@
     "variables": {
         "1": "coupon_code",
         "2": "docs",
-        "3": "images/library-logo-resource2x.width-1000.png"
+        "3": "library-logo-resource2x.width-1000.png"
     }
 }
