@@ -9,7 +9,7 @@ public class TwilioMedia {
     public static String CreateTemplate() {
         var twilioMedia = new Content.TwilioMedia();
         twilioMedia.setBody("Thank you for your order {{1}}");
-        twilioMedia.setMedia(Arrays.asList("https://raw.githubusercontent.com/twilio-samples/api-snippets/main/_images/library-logo-resource2x.width-1000.png"));
+        twilioMedia.setMedia(Arrays.asList("https://raw.githubusercontent.com/twilio-samples/api-snippets/refs/heads/main/_images/library-logo-resource2x.width-1000.png"));
 
         var types = new Content.Types();
         types.setTwilioMedia(twilioMedia);

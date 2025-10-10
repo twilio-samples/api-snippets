@@ -20,7 +20,7 @@
             ],
             "body": null,
             "media": [
-                "https://raw.githubusercontent.com/twilio-samples/api-snippets/main/_images/{{3}}"
+                "https://raw.githubusercontent.com/twilio-samples/api-snippets/refs/heads/main/_images/{{3}}"
             ],
             "subtitle": "To unsubscribe, reply Stop",
             "title": "Congratulations, you've reached Elite status! Add code {{1}} for 10% off."
