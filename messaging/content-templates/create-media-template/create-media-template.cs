@@ -10,7 +10,7 @@ using Twilio.Rest.Content.V1;
     var twilioMedia = new TwilioMedia.Builder();
     twilioMedia.WithBody("Thank you for your order {{1}}");
     var media1 = new Media.Builder()
-        .WithMedia("https://raw.githubusercontent.com/twilio-samples/api-snippets/main/_images/library-logo-resource2x.width-1000.png")
+        .WithMedia("https://raw.githubusercontent.com/twilio-samples/api-snippets/refs/heads/main/_images/library-logo-resource2x.width-1000.png")
         .Build();
     twilioMedia.WithMedia(new List<Media>() { media1 });
 

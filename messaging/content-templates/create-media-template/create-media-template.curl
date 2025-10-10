@@ -8,7 +8,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
     "types": {
         "twilio/media": {
         "body": "Thank you for your order {{1}}",   
-        "media": ["https://raw.githubusercontent.com/twilio-samples/api-snippets/main/_images/library-logo-resource2x.width-1000.png"]
+        "media": ["https://raw.githubusercontent.com/twilio-samples/api-snippets/refs/heads/main/_images/library-logo-resource2x.width-1000.png"]
         }
     }
 }'
