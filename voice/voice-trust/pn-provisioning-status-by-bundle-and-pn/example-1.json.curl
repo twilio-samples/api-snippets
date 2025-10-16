@@ -1,2 +1,2 @@
-curl -XGET "https://voice.twilio.com/v2/ComplianceRegistrations/{BundleSid}/PhoneNumbers/{PN or PN SID}/ProvisioningStatus" \
-    -u 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_auth_token'
+curl -X GET "https://voice.twilio.com/v2/ComplianceRegistrations/{complianceRegistrationSid}/PhoneNumbers/{pnSidOrDid}/ProvisioningStatus" \
+    -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
