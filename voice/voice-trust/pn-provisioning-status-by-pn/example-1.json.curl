@@ -1,0 +1,2 @@
+curl -XGET "https://voice.twilio.com/v2/PhoneNumber/{PN or PN SID}/ProvisioningStatus" \
+    -u 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_auth_token'

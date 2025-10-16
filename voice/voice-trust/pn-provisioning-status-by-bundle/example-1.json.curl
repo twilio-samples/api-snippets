@@ -1,0 +1,2 @@
+curl -XGET "https://voice.twilio.com/v2/ComplianceRegistrations/{BundleSid}/ProvisioningStatus" \
+    -u 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_auth_token'
