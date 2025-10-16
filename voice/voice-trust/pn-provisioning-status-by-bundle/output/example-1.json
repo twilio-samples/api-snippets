@@ -54,7 +54,7 @@
       "phone_number": "+150830XXXX",
       "pn_sid": "PN2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
       "provisioning_status": "TWILIO_APPROVED",
-      "provisioning_type": "US Basic Branded Calling",
+        "provisioning_type": "US Basic Branded Calling",
       "regulation_sid": "RNca63d1066fbd5e44eac02d0b3cf6d019"
     }
   ]

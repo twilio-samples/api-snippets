@@ -1,4 +1,4 @@
 {
-  "title": "Get Phone Number Provisioning Status by Phone Number or Phone Number SID",
+  "title": "Retrieve the phone number provisioning status by phone number",
   "type": "server"
 }

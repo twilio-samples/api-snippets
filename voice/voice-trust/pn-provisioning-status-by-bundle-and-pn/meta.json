@@ -1,4 +1,4 @@
 {
-  "title": "Get Phone Number Provisioning Status by Phone Number & Bundle SID",
+  "title": "Retrieve the phone number provisioning status by phone number and compliance registration",
   "type": "server"
 }
