@@ -1,0 +1,26 @@
+{
+  "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "bundle_sid": "BUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "carriers": [
+    {
+      "carrier_errors": [],
+      "carrier_name": "T-Mobile",
+      "carrier_status": "rejected",
+      "date_created": "2025-09-04T06:07:16Z",
+      "date_updated": "2025-09-04T06:07:16Z"
+    },
+    {
+      "carrier_errors": [],
+      "carrier_name": "AT&T",
+      "carrier_status": "active",
+      "date_created": "2025-09-04T06:07:16Z",
+      "date_updated": "2025-09-04T06:07:16Z"
+    }
+  ],
+  "errors": [],
+  "phone_number": "+13309440913",
+  "pn_sid": "PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "provisioning_status": "TWILIO_REJECTED",
+  "provisioning_type": "US Voice Integrity",
+  "regulation_sid": "RN5b3660f9598883b1df4e77f77acefba0"
+}

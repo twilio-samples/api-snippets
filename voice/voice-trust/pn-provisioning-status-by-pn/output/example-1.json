@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "next_page_url": null,
+    "page_size": 2,
+    "previous_page_url": null
+  },
+  "results": [
+    {
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "bundle_sid": "BU1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "carriers": [
+        {
+          "carrier_errors": [],
+          "carrier_name": "T-Mobile",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:51:39Z",
+          "date_updated": "2025-09-03T08:51:39Z"
+        },
+        {
+          "carrier_errors": [],
+          "carrier_name": "Verizon",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:51:39Z",
+          "date_updated": "2025-09-03T08:51:39Z"
+        }
+      ],
+      "errors": [],
+      "phone_number": "+15082051738",
+      "pn_sid": "PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "provisioning_status": "TWILIO_APPROVED",
+      "provisioning_type": "US Basic Branded Calling",
+      "regulation_sid": "RNca63d1066fbd5e44eac02d0b3cf6d019"
+    },
+    {
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "bundle_sid": "BU2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "carriers": [
+        {
+          "carrier_errors": [],
+          "carrier_name": "T-Mobile",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:51:39Z",
+          "date_updated": "2025-09-03T08:51:39Z"
+        },
+        {
+          "carrier_errors": [],
+          "carrier_name": "Verizon",
+          "carrier_status": "in-progress",
+          "date_created": "2025-09-03T08:51:39Z",
+          "date_updated": "2025-09-03T08:51:39Z"
+        },
+        {
+          "carrier_errors": [],
+          "carrier_name": "AT&T",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:51:39Z",
+          "date_updated": "2025-09-03T08:51:39Z"
+        }
+      ],
+      "errors": [],
+      "phone_number": "+15082051738",
+      "pn_sid": "PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "provisioning_status": "IN_PROGRESS",
+      "provisioning_type": "US Voice Integrity",
+      "regulation_sid": "RN5b3660f9598883b1df4e77f77acefba0"
+    }
+  ]
+}

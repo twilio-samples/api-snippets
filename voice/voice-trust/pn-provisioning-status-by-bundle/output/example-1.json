@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "next_page_url": null,
+    "page_size": 2,
+    "previous_page_url": null
+  },
+  "results": [
+    {
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "bundle_sid": "BUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "carriers": [
+        {
+          "carrier_errors": [],
+          "carrier_name": "T-Mobile",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:41:56Z",
+          "date_updated": "2025-09-03T08:41:56Z"
+        },
+        {
+          "carrier_errors": [],
+          "carrier_name": "Verizon",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:41:56Z",
+          "date_updated": "2025-09-03T08:41:56Z"
+        }
+      ],
+      "errors": [],
+      "phone_number": "+150820XXXX",
+      "pn_sid": "PN1XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "provisioning_status": "TWILIO_APPROVED",
+      "provisioning_type": "US Basic Branded Calling",
+      "regulation_sid": "RNca63d1066fbd5e44eac02d0b3cf6d019"
+    },
+    {
+      "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "bundle_sid": "BUXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "carriers": [
+        {
+          "carrier_errors": [],
+          "carrier_name": "T-Mobile",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:41:56Z",
+          "date_updated": "2025-09-03T08:41:56Z"
+        },
+        {
+          "carrier_errors": [],
+          "carrier_name": "Verizon",
+          "carrier_status": "active",
+          "date_created": "2025-09-03T08:41:56Z",
+          "date_updated": "2025-09-03T08:41:56Z"
+        }
+      ],
+      "errors": [],
+      "phone_number": "+150830XXXX",
+      "pn_sid": "PN2XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "provisioning_status": "TWILIO_APPROVED",
+      "provisioning_type": "US Basic Branded Calling",
+      "regulation_sid": "RNca63d1066fbd5e44eac02d0b3cf6d019"
+    }
+  ]
+}
