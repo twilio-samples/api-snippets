@@ -1,7 +1,6 @@
 require 'twilio-ruby'
 require 'sinatra'
 
-# Respond to incoming calls with a simple text message
 post '/sms' do
   twiml = Twilio::TwiML::MessagingResponse.new
 
