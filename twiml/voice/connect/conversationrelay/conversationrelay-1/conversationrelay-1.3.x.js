@@ -3,7 +3,8 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse;
 const response = new VoiceResponse();
 const connect = response.connect();
 const conversationrelay = connect.conversationRelay({
-    url: 'wss://mywebsocketserver.com/websocket'
+    url: 'wss://mywebsocketserver.com/websocket',
+    language: 'sv-SE'
 });
 conversationrelay.language({
     code: 'sv-SE',
