@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Start>
+        <Recording channels="dual" recordingStatusCallback = 
+        "https://example.com/your-callback-url" />
+    </Start>
+    <Say>The recording has started.</Say>
+</Response>
