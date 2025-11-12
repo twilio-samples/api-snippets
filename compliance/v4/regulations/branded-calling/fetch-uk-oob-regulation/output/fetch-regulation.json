@@ -1,0 +1,376 @@
+{
+  "country": "GB",
+  "endUserType": "BUSINESS",
+  "friendlyName": "Branded Calling - UK",
+  "id": "RN304faa2408f673b68867fe5cb65b7f50",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "properties": {
+      "address": {
+        "additionalProperties": false,
+        "description": "Physical address of your business.",
+        "properties": {
+          "id": {
+            "description": "Must be a valid address",
+            "maxLength": 34,
+            "minLength": 34,
+            "pattern": "^AD[0-9a-fA-F]{32}$",
+            "title": "Address id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "authorizedContact": {
+        "additionalProperties": false,
+        "description": "If you are an ISV registering for Branded Calling on behalf of an end user, please ensure the brand contact is an individual from the end user's company.",
+        "properties": {
+          "firstName": {
+            "description": "The first name of the authorized contact.",
+            "minLength": 1,
+            "title": "First Name",
+            "type": "string"
+          },
+          "lastName": {
+            "description": "The last name of the authorized contact.",
+            "minLength": 1,
+            "title": "Last Name",
+            "type": "string"
+          },
+          "mobilePhoneE164": {
+            "description": "The mobile phone number of the authorized contact.",
+            "pattern": "^\\+[1-9]\\d{1,14}$",
+            "title": "Mobile Phone Number",
+            "type": "string"
+          },
+          "verificationEmail": {
+            "description": "The verification email address of the authorized contact.",
+            "format": "email",
+            "minLength": 1,
+            "pattern": "^\\S+@\\S+\\.\\S+$",
+            "title": "Verification Email Address",
+            "type": "string"
+          }
+        },
+        "required": [
+          "firstName",
+          "lastName",
+          "verificationEmail",
+          "mobilePhoneE164"
+        ],
+        "type": "object"
+      },
+      "authorizedRepresentative1": {
+        "additionalProperties": false,
+        "description": "Authorized Representative #1",
+        "properties": {
+          "email": {
+            "description": "The email address of the authorized representative.",
+            "format": "email",
+            "minLength": 1,
+            "pattern": "^\\S+@\\S+\\.\\S+$",
+            "title": "Email Address",
+            "type": "string"
+          },
+          "firstName": {
+            "description": "The first name of the authorized representative.",
+            "minLength": 1,
+            "title": "First Name",
+            "type": "string"
+          },
+          "jobPosition": {
+            "description": "The job position of the authorized representative.",
+            "enum": [
+              "Director",
+              "GM",
+              "VP",
+              "CEO",
+              "CFO",
+              "General Counsel",
+              "Other"
+            ],
+            "title": "Job Position",
+            "type": "string"
+          },
+          "lastName": {
+            "description": "The last name of the authorized representative.",
+            "minLength": 1,
+            "title": "Last Name",
+            "type": "string"
+          },
+          "phoneE164": {
+            "description": "The phone number of the authorized representative.",
+            "minLength": 1,
+            "pattern": "^\\+[1-9]\\d{1,14}$",
+            "title": "Phone Number",
+            "type": "string"
+          }
+        },
+        "required": [
+          "firstName",
+          "lastName",
+          "email",
+          "phoneE164",
+          "jobPosition"
+        ],
+        "type": "object"
+      },
+      "brandedCaller": {
+        "additionalProperties": false,
+        "description": "The information that will be shown on the terminating handset for outbound calls.",
+        "properties": {
+          "displayName": {
+            "description": "The display name to be shown on the terminating handset for outbound calls. The display name can be up to 32 characters.",
+            "maxLength": 32,
+            "minLength": 1,
+            "title": "Branded Calls Display Name",
+            "type": "string"
+          }
+        },
+        "required": [
+          "displayName"
+        ],
+        "type": "object"
+      },
+      "business": {
+        "additionalProperties": false,
+        "description": "General business information",
+        "properties": {
+          "employeeCount": {
+            "description": "The number of employees in the business.",
+            "minimum": 1,
+            "title": "Business Employee Count",
+            "type": "integer"
+          },
+          "entityType": {
+            "description": "Business type can be empty or one of Sole Proprietorship, Partnership, Co-operative, Limited Liability Corporation, Non-profit Corporation, Corporation",
+            "enum": [
+              "Sole Proprietorship",
+              "Partnership",
+              "Limited Liability Corporation",
+              "Co-operative",
+              "Non-profit Corporation",
+              "Corporation"
+            ],
+            "title": "Business Type",
+            "type": "string"
+          },
+          "identityType": {
+            "description": "Whether the company is an ISV (independent software vendor) or direct customer.",
+            "enum": [
+              "direct_customer",
+              "isv_reseller_or_partner"
+            ],
+            "title": "Business Identity (ISV vs. Direct)",
+            "type": "string"
+          },
+          "industry": {
+            "description": "Business industry should be one of AGRICULTURE, COMMUNICATION, CONSTRUCTION, EDUCATION, ENERGY, ENTERTAINMENT, FINANCIAL, GAMBLING, GOVERNMENT, HEALTHCARE, HOSPITALITY, HUMAN_RESOURCES, INSURANCE, LEGAL, MANUFACTURING, NGO, POLITICAL, POSTAL, PROFESSIONAL, REAL_ESTATE, RETAIL, TECHNOLOGY, TRANSPORTATION",
+            "enum": [
+              "AUTOMOTIVE",
+              "AGRICULTURE",
+              "BANKING",
+              "CONSTRUCTION",
+              "CONSUMER",
+              "EDUCATION",
+              "ENGINEERING",
+              "ENERGY",
+              "OIL_AND_GAS",
+              "FAST_MOVING_CONSUMER_GOODS",
+              "FINANCIAL",
+              "FINTECH",
+              "FOOD_AND_BEVERAGE",
+              "GOVERNMENT",
+              "HEALTHCARE",
+              "HOSPITALITY",
+              "INSURANCE",
+              "LEGAL",
+              "MANUFACTURING",
+              "MEDIA",
+              "ONLINE",
+              "PROFESSIONAL_SERVICES",
+              "RAW_MATERIALS",
+              "REAL_ESTATE",
+              "RELIGION",
+              "RETAIL",
+              "JEWELRY",
+              "TECHNOLOGY",
+              "TELECOMMUNICATIONS",
+              "TRANSPORTATION",
+              "TRAVEL",
+              "ELECTRONICS",
+              "NOT_FOR_PROFIT"
+            ],
+            "title": "Business Industry",
+            "type": "string"
+          },
+          "isSubassigned": {
+            "description": "Choose any one of the following values : [YES, NO]. A sub assigned phone number is where Independent Software Vendor (ISV) assigns the Twilio phone number to their end customer. If you are a direct customer, answer NO.",
+            "enum": [
+              "YES",
+              "NO"
+            ],
+            "title": "Will you subassign this number to your end customers?",
+            "type": "string"
+          },
+          "legalName": {
+            "description": "Name of the business entity",
+            "maxLength": 255,
+            "minLength": 1,
+            "title": "Business Name",
+            "type": "string"
+          },
+          "privacyNoticeUrl": {
+            "description": "The privacy notice/policy website that explains how the business collects, uses, and protects personal data.",
+            "format": "uri",
+            "pattern": "^[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:[Ww]{3}\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&/=]*)$",
+            "title": "Privacy Notice URL",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "registrationAuthority": {
+            "description": "The registrar the business is registered with: EIN(US), DUNS, CBN(CA), CCN(CA), CRN(UK), OTHER",
+            "enum": [
+              "EIN",
+              "DUNS",
+              "CBN",
+              "CCN",
+              "CRN",
+              "OTHER"
+            ],
+            "title": "Business Registration Identifier",
+            "type": "string"
+          },
+          "registrationNumber": {
+            "description": "The ID number of the business in the business registrar",
+            "maxLength": 21,
+            "minLength": 1,
+            "title": "Business Registration Number",
+            "type": "string"
+          },
+          "tradeName": {
+            "description": "The trade name or DBA name that the business uses to operate under that is different than the legal name.",
+            "maxLength": 255,
+            "minLength": 1,
+            "title": "Business Trade Name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "websiteUrl": {
+            "description": "The URL of the business website",
+            "format": "uri",
+            "minLength": 1,
+            "pattern": "^[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:[Ww]{3}\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b(?:[-a-zA-Z0-9()@:%_\\+.~#?&/=]*)$",
+            "title": "Website URL",
+            "type": "string"
+          }
+        },
+        "required": [
+          "legalName",
+          "entityType",
+          "identityType",
+          "registrationNumber",
+          "registrationAuthority",
+          "industry",
+          "websiteUrl",
+          "isSubassigned",
+          "employeeCount"
+        ],
+        "type": "object"
+      },
+      "useCase": {
+        "additionalProperties": false,
+        "description": "What the branded calling products will be used for.",
+        "properties": {
+          "callVolumeDaily": {
+            "description": "The number of calls expected to be placed per day.",
+            "minimum": 1,
+            "title": "Call Volume Daily",
+            "type": "integer"
+          },
+          "category": {
+            "description": "The branded calling use case category.",
+            "enum": [
+              "2FA",
+              "ACCOUNT_NOTIFICATION",
+              "AGENTS_FRANCHISES",
+              "CARRIER_EXEMPT",
+              "CHARITY",
+              "CUSTOMER_CARE",
+              "DELIVERY_NOTIFICATION",
+              "EMERGENCY",
+              "FRAUD_ALERT",
+              "HIGHER_EDUCATION",
+              "K12_EDUCATION",
+              "LOW_VOLUME",
+              "MARKETING",
+              "MIXED",
+              "POLITICAL",
+              "POLLING_VOTING",
+              "PROXY",
+              "PUBLIC_SERVICE_ANNOUNCEMENT",
+              "SECURITY_ALERT",
+              "SOCIAL",
+              "SOLE_PROPRIETOR",
+              "SWEEPSTAKE"
+            ],
+            "title": "Use Case Category",
+            "type": "string"
+          },
+          "consentDescription": {
+            "description": "The branded calling consent use case description.",
+            "minLength": 1,
+            "title": "Use Case Consent Description",
+            "type": "string"
+          },
+          "description": {
+            "description": "The branded calling use case description.",
+            "minLength": 1,
+            "title": "Use Case Description",
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "description",
+          "consentDescription",
+          "callVolumeDaily"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "brandedCaller",
+      "authorizedRepresentative1",
+      "business",
+      "useCase",
+      "address"
+    ],
+    "title": "Branded Calling - UK",
+    "type": "object",
+    "x-acceptableDocuments": [
+      {
+        "description": "The letter to authorize Twilio to run voice traffic on a given set of Phone Numbers.",
+        "documents": [
+          {
+            "description": "Letter of Authorization containing Brand Name, Tax ID, Tax country, Legal Name, Address, Phone #",
+            "documentType": "letter_of_authorization",
+            "friendlyName": "Letter of Authorization"
+          }
+        ],
+        "friendlyName": "Letter of Authorization"
+      }
+    ]
+  },
+  "subType": "BRANDED_CALLS",
+  "type": "VOICE_TRUST",
+  "version": 4
+}

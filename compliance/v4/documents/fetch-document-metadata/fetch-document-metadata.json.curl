@@ -1,2 +1,2 @@
-curl -X GET 'https://trusthub.twilio.com/v4/Compliance/Registrations/BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' \
+curl -X GET 'https://trusthub.twilio.com/v4/Compliance/Documents/RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
