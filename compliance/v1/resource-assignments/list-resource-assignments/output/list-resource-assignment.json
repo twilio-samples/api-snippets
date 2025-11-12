@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "first_page_url": "https://trusthub.twilio.com/v1/Compliance/Registrations/BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ResourceAssignments?PageSize=50&Page=0",
+    "key": "results",
+    "next_page_url": null,
+    "page": 0,
+    "page_size": 50,
+    "previous_page_url": null,
+    "url": "https://trusthub.twilio.com/v1/Compliance/Registrations/BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ResourceAssignments?PageSize=50&Page=0"
+  },
+  "results": [
+    {
+      "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "date_created": "2025-10-17T10:52:57Z",
+      "registration_id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "sid": "RAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "type": "phone-number",
+      "url": "https://trusthub.twilio.com/v1/Compliance/Registrations/BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ResourceAssignments/RAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ]
+}

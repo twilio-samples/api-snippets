@@ -1,0 +1,18 @@
+curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "data": {
+    "brandedCaller": {
+        "voiceIntegrityRegistrationId": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+        "displayName": "Brand Name",
+        "displayLongName": "Brand long name"
+    }
+  },
+  "regulationId": "RNca63d1066fbd5e44eac02d0b3cf6d019",
+  "regulationVersion": 13,
+  "comments": "Sample comment",
+  "friendlyName": "Registration friendlyName",
+  "statusNotificationEmail": "notifcation@twilio.com",
+  "statusCallbackUrl": "https://twilio.com"
+}'
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

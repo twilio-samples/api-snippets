@@ -1,0 +1,22 @@
+{
+  "comments": null,
+  "data": {
+    "brandedCaller": {
+      "displayLongName": "Brand long name",
+      "displayName": "Brand Name",
+      "voiceIntegrityRegistrationId": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"
+    }
+  },
+  "dataErrors": null,
+  "dateCreated": "2025-10-21T19:01:30Z",
+  "dateExpires": null,
+  "dateUpdated": "2025-10-21T19:01:30Z",
+  "documentLinks": [],
+  "friendlyName": "Registration friendlyName",
+  "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "regulationId": "RNca63d1066fbd5e44eac02d0b3cf6d019",
+  "regulationVersion": 13,
+  "status": "DRAFT",
+  "statusCallbackUrl": "https://twilio.com",
+  "statusNotificationEmail": "notifcation@twilio.com"
+}

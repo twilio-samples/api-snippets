@@ -1,0 +1,6 @@
+curl -X PATCH 'https://trusthub.twilio.com/v4/Compliance/DocumentLinks/BVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' \
+--header 'Content-Type: application/json' \
+--data '{
+  "documentId": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab"
+}'
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

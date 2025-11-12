@@ -1,0 +1,5 @@
+curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Documents' \
+--form 'type="LETTER_OF_AUTHORIZATION"' \
+--form 'content=@"/Users/John/Documents/loa.jpg"' \
+--form 'friendlyName="letter of auth doc"'
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

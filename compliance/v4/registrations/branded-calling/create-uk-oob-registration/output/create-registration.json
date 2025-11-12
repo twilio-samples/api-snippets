@@ -1,0 +1,53 @@
+{
+  "comments": null,
+  "data": {
+    "address": {
+      "id": "ADaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "authorizedContact": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mobilePhoneE164": "+19318339216",
+      "verificationEmail": "johndoe@twilio.com"
+    },
+    "authorizedRepresentative1": {
+      "email": "bsmith@twilio.com",
+      "firstName": "Bob",
+      "jobPosition": "CEO",
+      "lastName": "Smith",
+      "phoneE164": "+19832979578"
+    },
+    "brandedCaller": {
+      "displayName": "Brand Display Name"
+    },
+    "business": {
+      "employeeCount": 1000,
+      "entityType": "Partnership",
+      "identityType": "direct_customer",
+      "industry": "RAW_MATERIALS",
+      "isSubassigned": "NO",
+      "legalName": "Business Name",
+      "registrationAuthority": "CRN",
+      "registrationNumber": "123456789",
+      "websiteUrl": "https://www.twilio.com"
+    },
+    "useCase": {
+      "callVolumeDaily": 100,
+      "category": "HIGHER_EDUCATION",
+      "consentDescription": "Consent description",
+      "description": "UseCase description"
+    }
+  },
+  "dataErrors": null,
+  "dateCreated": "2025-10-16T10:21:20Z",
+  "dateExpires": null,
+  "dateUpdated": "2025-10-16T10:21:21Z",
+  "documentLinks": [],
+  "friendlyName": "Registration friendlyName",
+  "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "regulationId": "RN304faa2408f673b68867fe5cb65b7f50",
+  "regulationVersion": 4,
+  "status": "DRAFT",
+  "statusCallbackUrl": "https://twilio.com",
+  "statusNotificationEmail": "notifcation@twilio.com"
+}

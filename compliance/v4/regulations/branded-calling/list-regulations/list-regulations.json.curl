@@ -1,0 +1,2 @@
+curl -X GET 'https://trusthub.twilio.com/v4/Compliance/Regulations?type=VOICE_TRUST&country=US&country=GB' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

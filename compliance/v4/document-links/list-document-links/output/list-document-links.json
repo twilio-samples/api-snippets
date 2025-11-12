@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "dateCreated": "2025-10-17T10:37:37Z",
+      "documentId": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": "BVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "registrationId": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "status": "DRAFT"
+    }
+  ],
+  "meta": {
+    "key": "items",
+    "nextToken": null,
+    "pageSize": 1,
+    "previousToken": null
+  }
+}

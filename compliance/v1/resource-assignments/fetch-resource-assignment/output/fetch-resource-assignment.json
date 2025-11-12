@@ -1,0 +1,9 @@
+{
+  "account_sid": "ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "date_created": "2025-10-17T10:52:57Z",
+  "registration_id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "resource_sid": "PNaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "sid": "RAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "type": "phone-number",
+  "url": "https://trusthub.twilio.com/v1/Compliance/Registrations/BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/ResourceAssignments/RAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}
