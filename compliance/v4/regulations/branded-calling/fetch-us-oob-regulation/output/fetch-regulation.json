@@ -1,0 +1,69 @@
+{
+  "country": "US",
+  "endUserType": "BUSINESS",
+  "friendlyName": "Basic Branded Calling - US",
+  "id": "RNca63d1066fbd5e44eac02d0b3cf6d019",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "properties": {
+      "brandedCaller": {
+        "additionalProperties": false,
+        "properties": {
+          "displayLongName": {
+            "description": "An optional longer display name for supported carriers. This should align with your primary display name. Limit 32 characters (including spaces), should always start with a letter and can only contain letters, numbers, periods, commas and spaces.",
+            "maxLength": 32,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z][A-Za-z0-9,.\\s]{1,31}$",
+            "title": "Branded Calls Long Display Name",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "displayName": {
+            "description": "The display name to be shown on the terminating handset for outbound calls. The display name can be up to 15 characters (including spaces), should always start with a letter and can only contain letters, numbers, periods, commas and spaces.",
+            "maxLength": 15,
+            "minLength": 1,
+            "pattern": "^[a-zA-Z][A-Za-z0-9,.\\s]{1,14}$",
+            "title": "Branded Calls Display Name",
+            "type": "string"
+          },
+          "voiceIntegrityRegistrationId": {
+            "description": "The registration id of the associated voice integrity registration.",
+            "maxLength": 34,
+            "minLength": 34,
+            "pattern": "^BU[0-9a-fA-F]{32}$",
+            "title": "Voice Integrity Registration Id",
+            "type": "string"
+          }
+        },
+        "required": [
+          "displayName"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "brandedCaller"
+    ],
+    "title": "Basic Branded Calling - US",
+    "type": "object",
+    "x-acceptableDocuments": [
+      {
+        "description": "The letter to authorize Twilio to run voice traffic on a given set of Phone Numbers.",
+        "documents": [
+          {
+            "description": "Letter of Authorization containing Brand Name, Tax ID, Tax country, Legal Name, Address, Phone #",
+            "documentType": "letter_of_authorization",
+            "friendlyName": "Letter of Authorization"
+          }
+        ],
+        "friendlyName": "Letter of Authorization"
+      }
+    ]
+  },
+  "subType": "BRANDED_CALLS",
+  "type": "VOICE_TRUST",
+  "version": 13
+}

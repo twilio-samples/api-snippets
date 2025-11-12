@@ -1,0 +1,53 @@
+curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "data": {
+    "address": {
+        "id": "ADaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "authorizedRepresentative1": {
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "email": "bsmith@twilio.com",
+      "phoneE164": "+19832979578",
+      "jobPosition": "CEO"
+    },
+    "useCase": {
+        "category": "HIGHER_EDUCATION",
+        "description": "UseCase description",
+        "consentDescription": "Consent description",
+        "callVolumeDaily": 100,
+        "categoryApple": "Optional category"
+
+    },
+    "authorizedContact": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "mobilePhoneE164": "+19318339216",
+        "verificationEmail": "johndoe@twilio.com"
+    },
+    "brandedCaller": {
+        "displayName": "Brand Display Name",
+        "displayCallReason": "Call Reason",
+        "displayLogoUrl": "https://www.logourl.com"
+    },
+    "business": {
+        "legalName": "Business Name",
+        "entityType": "Partnership",
+        "identityType": "direct_customer",
+        "isSubassigned": "NO",
+        "registrationNumber": "123456789",
+        "registrationAuthority": "EIN",
+        "industry": "RAW_MATERIALS",
+        "websiteUrl": "https://www.twilio.com",
+        "employeeCount": 1000
+    }
+  },
+  "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
+  "regulationVersion": 9,
+  "comments": "Sample comment",
+  "friendlyName": "Registration friendlyName",
+  "statusNotificationEmail": "notifcation@twilio.com",
+  "statusCallbackUrl": "https://twilio.com"
+}'
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

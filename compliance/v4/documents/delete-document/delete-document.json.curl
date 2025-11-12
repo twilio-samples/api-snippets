@@ -1,0 +1,2 @@
+curl -X DELETE 'https://trusthub.twilio.com/v4/Compliance/Documents/RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

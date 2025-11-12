@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "contentType": null,
+      "contentUrl": null,
+      "dateCreated": "2025-10-17T10:12:05Z",
+      "dateUpdated": "2025-10-17T10:12:05Z",
+      "friendlyName": "LOA",
+      "id": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "type": "LETTER_OF_AUTHORIZATION"
+    },
+    {
+      "contentType": null,
+      "contentUrl": null,
+      "dateCreated": "2025-10-17T09:59:16Z",
+      "dateUpdated": "2025-10-17T09:59:16Z",
+      "friendlyName": "Letter of Auth doc",
+      "id": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+      "type": "LETTER_OF_AUTHORIZATION"
+    }
+  ],
+  "meta": {
+    "key": "items",
+    "nextToken": "eyJwb2ludGVyIjoiUkRhYzYzNGYwNzVkZDc3NjBiNDE5MjYyODRlZDY5ODI4ZCIsImRpcmVjdGlvbiI6Ik5FWFQifQ==",
+    "pageSize": 2,
+    "previousToken": null
+  }
+}

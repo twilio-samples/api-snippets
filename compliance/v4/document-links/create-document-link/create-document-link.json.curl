@@ -1,0 +1,7 @@
+curl -X POST 'https://trusthub.twilio.com/v4/Compliance/DocumentLinks' \
+--header 'Content-Type: application/json' \
+--data '{
+  "documentId": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "registrationId": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}'
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

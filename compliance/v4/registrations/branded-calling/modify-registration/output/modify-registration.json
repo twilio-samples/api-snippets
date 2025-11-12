@@ -1,0 +1,56 @@
+{
+  "comments": null,
+  "data": {
+    "address": {
+      "id": "ADaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    "authorizedContact": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "mobilePhoneE164": "+19318339216",
+      "verificationEmail": "johndoe@twilio.com"
+    },
+    "authorizedRepresentative1": {
+      "email": "bsmith@twilio.com",
+      "firstName": "Bob",
+      "jobPosition": "CEO",
+      "lastName": "Smith",
+      "phoneE164": "+19832979578"
+    },
+    "brandedCaller": {
+      "displayCallReason": "Call Reason",
+      "displayLogoUrl": "https://www.logourl.com",
+      "displayName": "Brand Display Name"
+    },
+    "business": {
+      "employeeCount": 1000,
+      "entityType": "Partnership",
+      "identityType": "direct_customer",
+      "industry": "RAW_MATERIALS",
+      "isSubassigned": "NO",
+      "legalName": "Business Name",
+      "registrationAuthority": "EIN",
+      "registrationNumber": "123456789",
+      "websiteUrl": "https://www.twilio.com"
+    },
+    "useCase": {
+      "callVolumeDaily": 100,
+      "category": "HIGHER_EDUCATION",
+      "categoryApple": "Optional category",
+      "consentDescription": "Consent description",
+      "description": "UseCase description"
+    }
+  },
+  "dataErrors": null,
+  "dateCreated": "2025-10-17T09:59:16Z",
+  "dateExpires": null,
+  "dateUpdated": "2025-10-17T10:04:49Z",
+  "documentLinks": [],
+  "friendlyName": "Registration friendlyName",
+  "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
+  "regulationVersion": 9,
+  "status": "DRAFT",
+  "statusCallbackUrl": "https://twilio.com",
+  "statusNotificationEmail": "notification@twilio.com"
+}

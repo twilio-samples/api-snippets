@@ -1,0 +1,2 @@
+curl -X GET 'https://trusthub.twilio.com/v4/Compliance/Regulations/RNa0b74679be7511921f4d2e3094fa6d23' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

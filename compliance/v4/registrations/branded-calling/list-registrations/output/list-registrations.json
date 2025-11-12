@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "comments": null,
+      "dateCreated": "2025-11-10T18:31:56Z",
+      "dateExpires": null,
+      "dateUpdated": "2025-11-10T18:31:56Z",
+      "friendlyName": "Branded Calling Registration",
+      "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
+      "regulationVersion": 9,
+      "status": "DRAFT"
+    },
+    {
+      "comments": null,
+      "dateCreated": "2025-11-10T18:17:28Z",
+      "dateExpires": null,
+      "dateUpdated": "2025-11-10T18:17:28Z",
+      "friendlyName": "Registration Friendly Name",
+      "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab",
+      "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
+      "regulationVersion": 9,
+      "status": "IN_REVIEW"
+    }
+  ],
+  "meta": {
+    "key": "items",
+    "nextToken": "eyJwYWdlVG9rZW4iOnsicG9pbnRlciI6IkJVYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWIiLCJkaXJlY3Rpb24iOiJORVhUIn0sImZpbHRlcnMiOnsicmVndWxhdGlvbklkIjoiUk5BMGI3NDY3OWJlNzUxMTkyMWY0ZDJlMzA5NGZhNmQyMyJ9fQ==",
+    "pageSize": 2,
+    "previousToken": null
+  }
+}
