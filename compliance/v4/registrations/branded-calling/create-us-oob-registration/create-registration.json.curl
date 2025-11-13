@@ -13,6 +13,6 @@ curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
   "comments": "Sample comment",
   "friendlyName": "Registration friendlyName",
   "statusNotificationEmail": "notifcation@twilio.com",
-  "statusCallbackUrl": "https://twilio.com"
+  "statusCallbackUrl": "https://statuscallback.example.com"
 }'
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
