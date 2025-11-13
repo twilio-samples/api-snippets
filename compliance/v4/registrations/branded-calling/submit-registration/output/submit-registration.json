@@ -18,6 +18,8 @@
       "phoneE164": "+19832979578"
     },
     "brandedCaller": {
+      "displayCallReason": "Call Reason",
+      "displayLogoUrl": "https://www.logo.example.com",
       "displayName": "Brand Display Name"
     },
     "business": {
@@ -27,13 +29,14 @@
       "industry": "RAW_MATERIALS",
       "isSubassigned": "NO",
       "legalName": "Business Name",
-      "registrationAuthority": "CRN",
+      "registrationAuthority": "EIN",
       "registrationNumber": "123456789",
       "websiteUrl": "https://www.website.example.com"
     },
     "useCase": {
       "callVolumeDaily": 100,
       "category": "HIGHER_EDUCATION",
+      "categoryApple": "Optional category",
       "consentDescription": "Consent description",
       "description": "UseCase description"
     }
@@ -41,13 +44,21 @@
   "dataErrors": null,
   "dateCreated": "2025-10-16T10:21:20Z",
   "dateExpires": null,
-  "dateUpdated": "2025-10-16T10:21:21Z",
-  "documentLinks": [],
+  "dateUpdated": "2025-10-16T10:44:28Z",
+  "documentLinks": [
+    {
+      "dateCreated": "2025-10-16T10:30:35Z",
+      "documentId": "RDaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": "BVaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "registrationId": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "status": "DRAFT"
+    }
+  ],
   "friendlyName": "Registration friendlyName",
   "id": "BUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-  "regulationId": "RN304faa2408f673b68867fe5cb65b7f50",
-  "regulationVersion": 4,
-  "status": "DRAFT",
+  "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
+  "regulationVersion": 9,
+  "status": "PENDING_REVIEW",
   "statusCallbackUrl": "https://statuscallback.example.com",
   "statusNotificationEmail": "notifcation@email.com"
 }

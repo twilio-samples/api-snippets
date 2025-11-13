@@ -8,7 +8,7 @@ curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
     "authorizedRepresentative1": {
       "firstName": "Bob",
       "lastName": "Smith",
-      "email": "bsmith@twilio.com",
+      "email": "bsmith@email.com",
       "phoneE164": "+19832979578",
       "jobPosition": "CEO"
     },
@@ -24,12 +24,12 @@ curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
         "firstName": "John",
         "lastName": "Doe",
         "mobilePhoneE164": "+19318339216",
-        "verificationEmail": "johndoe@twilio.com"
+        "verificationEmail": "johndoe@email.com"
     },
     "brandedCaller": {
         "displayName": "Brand Display Name",
         "displayCallReason": "Call Reason",
-        "displayLogoUrl": "https://www.logourl.com"
+        "displayLogoUrl": "https://www.logo.example.com"
     },
     "business": {
         "legalName": "Business Name",
@@ -39,7 +39,7 @@ curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
         "registrationNumber": "123456789",
         "registrationAuthority": "EIN",
         "industry": "RAW_MATERIALS",
-        "websiteUrl": "https://www.twilio.com",
+        "websiteUrl": "https://www.wesbite.example.com",
         "employeeCount": 1000
     }
   },
@@ -47,7 +47,7 @@ curl -X POST 'https://trusthub.twilio.com/v4/Compliance/Registrations' \
   "regulationVersion": 9,
   "comments": "Sample comment",
   "friendlyName": "Registration friendlyName",
-  "statusNotificationEmail": "notifcation@twilio.com",
-  "statusCallbackUrl": "https://twilio.com"
+  "statusNotificationEmail": "notifcation@email.com",
+  "statusCallbackUrl": "https://statuscallback.example.com"
 }'
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

@@ -17,6 +17,6 @@
   "regulationId": "RNca63d1066fbd5e44eac02d0b3cf6d019",
   "regulationVersion": 13,
   "status": "DRAFT",
-  "statusCallbackUrl": "https://twilio.com",
-  "statusNotificationEmail": "notifcation@twilio.com"
+  "statusCallbackUrl": "https://statuscallback.example.com",
+  "statusNotificationEmail": "notifcation@email.com"
 }

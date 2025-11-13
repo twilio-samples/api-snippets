@@ -8,10 +8,10 @@
       "firstName": "John",
       "lastName": "Doe",
       "mobilePhoneE164": "+19318339216",
-      "verificationEmail": "johndoe@twilio.com"
+      "verificationEmail": "johndoe@email.com"
     },
     "authorizedRepresentative1": {
-      "email": "bsmith@twilio.com",
+      "email": "bsmith@email.com",
       "firstName": "Bob",
       "jobPosition": "CEO",
       "lastName": "Smith",
@@ -19,7 +19,7 @@
     },
     "brandedCaller": {
       "displayCallReason": "Call Reason",
-      "displayLogoUrl": "https://www.logourl.com",
+      "displayLogoUrl": "https://www.logo.example.com",
       "displayName": "Brand Display Name"
     },
     "business": {
@@ -31,7 +31,7 @@
       "legalName": "Business Name",
       "registrationAuthority": "EIN",
       "registrationNumber": "123456789",
-      "websiteUrl": "https://www.twilio.com"
+      "websiteUrl": "https://www.website.example.com"
     },
     "useCase": {
       "callVolumeDaily": 100,
@@ -59,6 +59,6 @@
   "regulationId": "RNa0b74679be7511921f4d2e3094fa6d23",
   "regulationVersion": 9,
   "status": "DRAFT",
-  "statusCallbackUrl": "https://twilio.com",
-  "statusNotificationEmail": "notifcation@twilio.com"
+  "statusCallbackUrl": "https://statuscallback.example.com",
+  "statusNotificationEmail": "notifcation@email.com"
 }
