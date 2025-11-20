@@ -1,0 +1,41 @@
+{
+    "account_sid": "ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "date_created": "2025-11-20T17:27:31Z",
+    "date_updated": "2025-11-20T17:29:51Z",
+    "friendly_name": "card_elite_status",
+    "language": "en",
+    "links": {
+        "approval_create": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/ApprovalRequests/whatsapp",
+        "approval_fetch": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/ApprovalRequests"
+    },
+    "sid": "HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "types": {
+        "twilio/card": {
+            "actions": [
+                {
+                    "chip_list": null,
+                    "id": null,
+                    "title": "Order Now",
+                    "type": "URL",
+                    "url": "https://twilio.com/",
+                    "webview_size": "NONE"
+                },
+                {
+                    "chip_list": null,
+                    "phone": "+15551234567",
+                    "title": "Call Us",
+                    "type": "PHONE_NUMBER"
+                }
+            ],
+            "body": null,
+            "media": [],
+            "orientation": "VERTICAL",
+            "subtitle": "To unsubscribe, reply Stop",
+            "title": "Congratulations, you've reached Elite status! Add code {{1}} for 10% off."
+        }
+    },
+    "url": "https://content.twilio.com/v1/Content/HXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "variables": {
+        "1": "coupon_code"
+    }
+}
