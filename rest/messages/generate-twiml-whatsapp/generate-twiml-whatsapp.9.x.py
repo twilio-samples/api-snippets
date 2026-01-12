@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route("/whatsapp", methods=['GET', 'POST'])
 def whatsapp_reply():
-    """Respond to incoming calls with a simple text message."""
     # Start our TwiML response
     resp = MessagingResponse()
 
