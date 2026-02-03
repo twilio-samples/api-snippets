@@ -1,4 +1,5 @@
 {
   "title": "Connect a Programmable Voice call to Twilio's ConversationRelay service.",
-  "type": "server"
+  "type": "server",
+  "test_output": true
 }
