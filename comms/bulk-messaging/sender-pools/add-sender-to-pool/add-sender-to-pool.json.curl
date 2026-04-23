@@ -1,0 +1,10 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/SenderPools/comms_senderpool_01h9krwprkeee8fzqspvwy6nq8/Senders' \
+--header 'Content-Type: application/json' \
+--data '[
+    {
+        "senderId": "your_sender_id"
+    }
+]' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

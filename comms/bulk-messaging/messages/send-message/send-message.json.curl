@@ -1,0 +1,16 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/Messages' \
+--header 'Content-Type: application/json' \
+--data '{
+    "to": [
+        {
+            "address": "+14153902337",
+            "channel": "PHONE"
+        }
+    ],
+    "content": {
+        "text": "Hello, World!"
+    }
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

@@ -1,0 +1,21 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/Senders/Resolve' \
+--header 'Content-Type: application/json' \
+--data '{
+    "recipientAddresses": [
+        {
+            "address": "+14153902337",
+            "channel": "PHONE"
+        },
+        {
+            "address": "+14153902337",
+            "channel": "WHATSAPP"
+        },
+        {
+            "address": "davidpletnjov@example.com",
+            "channel": "EMAIL"
+        }
+    ]
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

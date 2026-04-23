@@ -1,0 +1,11 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/SenderPools' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Sales Leads - APAC",
+    "tags": {
+        "region": "APAC"
+    }
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

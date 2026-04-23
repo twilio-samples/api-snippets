@@ -1,0 +1,3 @@
+curl \
+'https://comms.twilio.com/v1/PushNotifications?operationId=comms_operation_01h9krwprkeee8fzqspvwy6nq8&status=SCHEDULED&tags=key_1%3Avalue%3Bkey_2%3Avalue%3B&startDate=2024-01-15T09%3A30%3A00Z&endDate=2024-01-15T09%3A30%3A00Z&user=comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8&provider=APN&pageToken=pageToken&pageSize=50' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

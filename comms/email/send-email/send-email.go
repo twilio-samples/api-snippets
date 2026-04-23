@@ -1,0 +1,54 @@
+package example
+
+import (
+    context "context"
+
+    twiliocomms "github.com/twilio/twilio-comms-go/twilio"
+    client "github.com/twilio/twilio-comms-go/twilio/client"
+    option "github.com/twilio/twilio-comms-go/twilio/option"
+)
+
+func do() {
+    client := client.NewWithOptions(
+        option.WithBasicAuth(
+            "<username>",
+            "<password>",
+        ),
+    )
+    request := &twiliocomms.EmailsSendRequest{
+        From: &twiliocomms.EmailsSendRequestFrom{
+            EmailAddressSender: &twiliocomms.EmailAddressSender{
+                Address: "support@example.company.io",
+                Name: "Cool Co Support",
+            },
+        },
+        To: []*twiliocomms.EmailsSendRequestToItem{
+            &twiliocomms.EmailsSendRequestToItem{
+                EmailsSendRequestToItemAddress: &twiliocomms.EmailsSendRequestToItemAddress{
+                    Address: "bob@example.com",
+                    Name: twiliocomms.String(
+                        "Bob Smith",
+                    ),
+                },
+            },
+        },
+        Content: &twiliocomms.EmailHtmlContent{
+            Html: "<html><body>Hey, <br/><br/>Cake</b></body></html>",
+            Text: twiliocomms.String(
+                "Hey, the cake is ready.",
+            ),
+            Subject: "Re: Wedding Cake",
+            Attachments: &twiliocomms.EmailAttachments{
+                &twiliocomms.EmailAttachmentsItem{
+                    Filename: "filename",
+                    ContentType: "contentType",
+                    Content: "content",
+                },
+            },
+        },
+    }
+    client.Emails.Send(
+        context.TODO(),
+        request,
+    )
+}

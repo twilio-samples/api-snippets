@@ -1,0 +1,29 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/Emails' \
+--header 'Content-Type: application/json' \
+--data '{
+    "from": {
+        "address": "support@example.company.io",
+        "name": "Cool Co Support"
+    },
+    "to": [
+        {
+            "address": "bob@example.com",
+            "name": "Bob Smith"
+        }
+    ],
+    "content": {
+        "html": "<html><body>Hey, <br/><br/>Cake</b></body></html>",
+        "text": "Hey, the cake is ready.",
+        "subject": "Re: Wedding Cake",
+        "attachments": [
+            {
+                "filename": "filename",
+                "contentType": "contentType",
+                "content": "content"
+            }
+        ]
+    }
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

@@ -1,0 +1,3 @@
+curl \
+'https://comms.twilio.com/v1/PushNotifications/DeviceRegistrations?userId=comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8&appName=appName&pageToken=pageToken&pageSize=50' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
