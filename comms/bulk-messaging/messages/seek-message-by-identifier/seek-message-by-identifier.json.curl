@@ -1,2 +1,3 @@
-curl -X GET "https://comms.twilio.com/v1/Messages/Seek/identifier" \
+curl -X GET "https://comms.twilio.com/v1/Messages/Seek/{identifier}" \
+--location --location-trusted \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
