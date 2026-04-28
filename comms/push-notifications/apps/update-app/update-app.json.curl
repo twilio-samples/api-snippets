@@ -1,0 +1,8 @@
+curl \
+-X PATCH \
+'https://comms.twilio.com/v1/PushNotifications/Apps/appName' \
+--header 'Content-Type: application/json' \
+--data '{
+    "isDefault": true
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

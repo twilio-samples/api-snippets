@@ -1,0 +1,27 @@
+curl \
+-X POST \
+'https://comms.twilio.com/v1/PushNotifications' \
+--header 'Content-Type: application/json' \
+--data '{
+    "from": {
+        "fcm": "your_credential_id",
+        "apn": "your_credential_id"
+    },
+    "to": [
+        {
+            "token": "your_fcm_device_token",
+            "provider": "FCM"
+        },
+        {
+            "token": "your_apn_device_token",
+            "provider": "APN"
+        }
+    ],
+    "content": {
+        "title": "Boarding time @ TLL",
+        "body": "Dear customer, you have 1 hour until boarding time at the Tallinn airport"
+    },
+    "priority": "HIGH",
+    "sound": "ring"
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

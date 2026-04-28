@@ -1,0 +1,4 @@
+curl \
+-X DELETE \
+'https://comms.twilio.com/v1/PushNotifications/DeviceRegistrations/comms_device_registration_01h9krwprkeee8fzqspvwy6nq8' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

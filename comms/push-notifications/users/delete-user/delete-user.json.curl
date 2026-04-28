@@ -1,0 +1,4 @@
+curl \
+-X DELETE \
+'https://comms.twilio.com/v1/PushNotifications/Users/comms_pushnotificationuser_01h9krwprkeee8fzqspvwy6nq8' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

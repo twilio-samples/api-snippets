@@ -1,0 +1,8 @@
+require "twiliocomms"
+
+client = TwilioComms::Client.new(
+  account_id: "TWILIO_ACCOUNT_SID",
+  auth_token: "TWILIO_AUTH_TOKEN"
+)
+
+client.senders.fetch(sender_id: "comms_sender_01h9krwprkeee8fzqspvwy6nq8")
