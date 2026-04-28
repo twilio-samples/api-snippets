@@ -1,3 +1,2 @@
-curl \
-'https://comms.twilio.com/v1/Messages/Operations?startDate=2024-01-15T09%3A30%3A00Z&endDate=2024-01-15T09%3A30%3A00Z&status=SCHEDULED&pageToken=pageToken&pageSize=50' \
+curl -X GET "https://comms.twilio.com/v1/Messages/Operations?startDate=2024-01-15&endDate=2024-01-15&status=SCHEDULED&pageToken=pageToken&pageSize=50" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

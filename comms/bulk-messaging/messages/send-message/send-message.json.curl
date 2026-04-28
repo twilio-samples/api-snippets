@@ -1,8 +1,6 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/Messages' \
---header 'Content-Type: application/json' \
---data '{
+curl -X POST "https://comms.twilio.com/v1/Messages" \
+--header "Content-Type: application/json" \
+--data "{
     "to": [
         {
             "address": "+12065558844",
@@ -16,5 +14,5 @@ curl \
         "address": "+14153901002",
         "channel": "SMS"
     }
-}' \
+}" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

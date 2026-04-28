@@ -16,11 +16,9 @@ func do() {
         ),
     )
     request := &twiliocomms.EmailsSendRequest{
-        From: &twiliocomms.EmailsSendRequestFrom{
-            EmailAddressSender: &twiliocomms.EmailAddressSender{
-                Address: "support@example.company.io",
-                Name: "Cool Co Support",
-            },
+        From: &twiliocomms.EmailAddressSender{
+            Address: "support@example.company.io",
+            Name: "Cool Co Support",
         },
         To: []*twiliocomms.EmailsSendRequestToItem{
             &twiliocomms.EmailsSendRequestToItem{

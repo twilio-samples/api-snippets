@@ -1,8 +1,6 @@
-curl \
--X POST \
-'https://comms.twilio.com/v1/Emails' \
---header 'Content-Type: application/json' \
---data '{
+curl -X POST "https://comms.twilio.com/v1/Emails" \
+--header "Content-Type: application/json" \
+--data "{
     "from": {
         "address": "support@example.company.io",
         "name": "Cool Co Support"
@@ -25,5 +23,5 @@ curl \
             }
         ]
     }
-}' \
+}" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

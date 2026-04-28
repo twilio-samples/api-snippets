@@ -2,7 +2,6 @@ package com.example.usage;
 
 import com.twilio.sdk.TwilioComms;
 import com.twilio.sdk.resources.emails.requests.EmailsSendRequest;
-import com.twilio.sdk.resources.emails.types.EmailsSendRequestFrom;
 import com.twilio.sdk.resources.emails.types.EmailsSendRequestToItem;
 import com.twilio.sdk.resources.emails.types.EmailsSendRequestToItemAddress;
 import com.twilio.sdk.types.EmailAddressSender;
@@ -22,13 +21,11 @@ public class Example {
             EmailsSendRequest
                 .builder()
                 .from(
-                    EmailsSendRequestFrom.of(
-                        EmailAddressSender
-                            .builder()
-                            .address("support@example.company.io")
-                            .name("Cool Co Support")
-                            .build()
-                    )
+                    EmailAddressSender
+                        .builder()
+                        .address("support@example.company.io")
+                        .name("Cool Co Support")
+                        .build()
                 )
                 .content(
                     EmailHtmlContent
