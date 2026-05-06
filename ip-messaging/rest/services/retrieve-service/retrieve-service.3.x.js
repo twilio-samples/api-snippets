@@ -8,9 +8,9 @@ const client = new Twilio(accountSid, authToken);
 client.chat
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

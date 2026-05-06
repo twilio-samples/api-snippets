@@ -16,10 +16,10 @@ client.notify.services
     apnCredentialSid: apnCredentialSid,
     fcmCredentialSid: fcmCredentialSid,
   })
-  .then(service => {
+  .then((service) => {
     console.log(service.friendlyName);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

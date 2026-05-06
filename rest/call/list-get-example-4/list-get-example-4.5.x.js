@@ -12,4 +12,4 @@ const filterOpts = {
   startTimeBefore: '2016-07-06',
 };
 
-client.calls.each(filterOpts, call => console.log(call.direction));
+client.calls.each(filterOpts, (call) => console.log(call.direction));

@@ -15,10 +15,10 @@ service.notifications
     identity: '00000001',
     body: 'Hello Bob',
   })
-  .then(notification => {
+  .then((notification) => {
     console.log(notification);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

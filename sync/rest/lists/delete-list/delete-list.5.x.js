@@ -9,9 +9,9 @@ const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service
   .syncLists('MyFirstList')
   .remove()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

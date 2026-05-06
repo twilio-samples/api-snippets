@@ -13,6 +13,6 @@ client.video.recordings
   .list({
     groupingSid: ['RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'],
   })
-  .then(rooms => {
-    rooms.forEach(room => console.log(room));
+  .then((rooms) => {
+    rooms.forEach((room) => console.log(room));
   });

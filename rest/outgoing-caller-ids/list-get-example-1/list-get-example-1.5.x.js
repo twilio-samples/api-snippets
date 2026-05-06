@@ -7,4 +7,4 @@ const client = require('twilio')(accountSid, authToken);
 
 client.api
   .accounts(accountSid)
-  .outgoingCallerIds.each(callerId => console.log(callerId.phoneNumber));
+  .outgoingCallerIds.each((callerId) => console.log(callerId.phoneNumber));

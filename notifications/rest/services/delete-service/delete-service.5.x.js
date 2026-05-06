@@ -11,14 +11,14 @@ const client = new Twilio(accountSid, authToken);
 client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .remove()
-  .then(wasRemoved => {
+  .then((wasRemoved) => {
     if (wasRemoved) {
       console.log(
         'notify service "ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" was removed'
       );
     }
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

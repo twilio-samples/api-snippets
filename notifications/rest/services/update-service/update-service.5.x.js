@@ -15,10 +15,10 @@ client.notify
     FacebookMessengerPageId: 'your_page_id',
     MessagingServiceSid: 'your_twilio_messaging_service_sid',
   })
-  .then(service => {
+  .then((service) => {
     console.log(service.friendlyName);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

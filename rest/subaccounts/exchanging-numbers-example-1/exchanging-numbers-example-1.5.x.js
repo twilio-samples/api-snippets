@@ -5,6 +5,9 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.incomingPhoneNumbers('PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  .update({accountSid: process.env.TWILIO_SUB_ACCOUNT_SID})
-  .then(incoming_phone_number => console.log(incoming_phone_number.friendlyName));
+client
+  .incomingPhoneNumbers('PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  .update({ accountSid: process.env.TWILIO_SUB_ACCOUNT_SID })
+  .then((incoming_phone_number) =>
+    console.log(incoming_phone_number.friendlyName)
+  );

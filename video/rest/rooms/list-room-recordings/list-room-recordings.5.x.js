@@ -12,6 +12,6 @@ const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 client.video
   .rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .recordings.list()
-  .then(recordings => {
-    recordings.forEach(recording => console.log(recording.sid));
+  .then((recordings) => {
+    recordings.forEach((recording) => console.log(recording.sid));
   });

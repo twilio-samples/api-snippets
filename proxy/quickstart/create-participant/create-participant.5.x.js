@@ -13,9 +13,9 @@ client.proxy
     identifier: '+15558675310',
     unique_name: 'Alice',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

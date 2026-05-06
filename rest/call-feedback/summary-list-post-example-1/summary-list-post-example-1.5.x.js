@@ -13,4 +13,4 @@ client.calls.feedbackSummaries
     includeSubaccounts: 'true',
     statusCallback: 'http://www.example.com/feedback',
   })
-  .then(summary => console.log(summary.sid));
+  .then((summary) => console.log(summary.sid));

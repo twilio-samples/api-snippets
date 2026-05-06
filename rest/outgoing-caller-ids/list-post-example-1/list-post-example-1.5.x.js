@@ -10,4 +10,4 @@ client.validationRequests
     friendlyName: 'My Home Phone Number',
     phoneNumber: '+12349013030',
   })
-  .then(data => console.log(data.validationCode));
+  .then((data) => console.log(data.validationCode));

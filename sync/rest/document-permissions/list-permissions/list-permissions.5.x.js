@@ -9,9 +9,9 @@ const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service
   .documents('MyFirstDocument')
   .documentPermissions.list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

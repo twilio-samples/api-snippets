@@ -5,6 +5,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.shortCodes.each({ shortCode: '898' }, shortCode =>
+client.shortCodes.each({ shortCode: '898' }, (shortCode) =>
   console.log(shortCode.smsMethod)
 );

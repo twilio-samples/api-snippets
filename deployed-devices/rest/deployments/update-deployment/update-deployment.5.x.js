@@ -14,9 +14,9 @@ fleet
     friendlyName: 'My New Device Deployment',
     syncServiceSid: 'ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

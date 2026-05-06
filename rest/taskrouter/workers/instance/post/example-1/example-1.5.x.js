@@ -13,4 +13,4 @@ client.taskrouter.v1
   .update({
     attributes: '{"type":"support"}',
   })
-  .then(worker => console.log(worker.attributes));
+  .then((worker) => console.log(worker.attributes));

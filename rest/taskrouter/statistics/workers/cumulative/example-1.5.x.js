@@ -8,9 +8,8 @@ const client = require('twilio')(accountSid, authToken);
 
 client.taskrouter.v1
   .workspaces(workspaceSid)
-  .workers
-  .cumulativeStatistics()
+  .workers.cumulativeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.cumulative.reservations_accepted);
   });

@@ -12,8 +12,8 @@ await client.removePushRegistrations(channelType, registrationId);
 // handle push notification payload parsing and emit the Client.pushNotification event on this Client instance
 await client.handlePushNotification(notificationPayload);
 
-client.on("pushNotification", (pushNotification) => {
-    // pushNotification was received by the client
+client.on('pushNotification', (pushNotification) => {
+  // pushNotification was received by the client
 });
 
 // static method for push notification payload parsing

@@ -7,9 +7,9 @@ const client = require('twilio')(accountSid, authToken);
 
 client.fax.v1.faxes
   .list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

@@ -9,9 +9,9 @@ client.chat.services
   .create({
     friendlyName: 'My Chat service',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

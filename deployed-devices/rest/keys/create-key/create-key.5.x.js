@@ -12,9 +12,9 @@ fleet.keys
   .create({
     deviceSid: 'THXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

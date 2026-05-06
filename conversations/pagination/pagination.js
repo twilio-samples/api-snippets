@@ -8,12 +8,12 @@ const conversations = conversationsPaginator.items;
 
 // get the next page
 if (conversationsPaginator.hasNextPage) {
-    conversationsPaginator = await conversationsPaginator.nextPage();
+  conversationsPaginator = await conversationsPaginator.nextPage();
 }
 
 // get the previous page
 if (conversationsPaginator.hasPrevPage) {
-    conversationsPaginator = await conversationsPaginator.prevPage();
+  conversationsPaginator = await conversationsPaginator.prevPage();
 }
 
 /* get the latest messages of the conversation. optional arguments:
@@ -23,7 +23,7 @@ if (conversationsPaginator.hasPrevPage) {
  */
 
 // get the messages paginator with latest 30 messages
-let messagesPaginator = await conversation.getMessages(30, 0, "backwards");
+let messagesPaginator = await conversation.getMessages(30, 0, 'backwards');
 
 // get messages amount of the conversation
 const messagesCount = await conversation.getMessagesCount();
@@ -33,10 +33,10 @@ const messages = messagesPaginator.items;
 
 // get the next page
 if (messagesPaginator.hasNextPage) {
-    messagesPaginator = await messagesPaginator.nextPage();
+  messagesPaginator = await messagesPaginator.nextPage();
 }
 
 // get the previous page
 if (messagesPaginator.hasPrevPage) {
-    messagesPaginator = await messagesPaginator.prevPage();
+  messagesPaginator = await messagesPaginator.prevPage();
 }

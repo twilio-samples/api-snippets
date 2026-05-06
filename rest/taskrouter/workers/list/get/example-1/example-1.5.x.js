@@ -6,6 +6,9 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const workspaceSid = 'WSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const client = require('twilio')(accountSid, authToken);
 
-client.taskrouter.v1.workspaces(workspaceSid).workers.list().then(workers => {
-  workers.forEach(worker => console.log(worker.friendlyName));
-});
+client.taskrouter.v1
+  .workspaces(workspaceSid)
+  .workers.list()
+  .then((workers) => {
+    workers.forEach((worker) => console.log(worker.friendlyName));
+  });

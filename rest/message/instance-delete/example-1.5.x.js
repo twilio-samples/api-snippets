@@ -6,6 +6,9 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.messages('MM800f449d0399ed014aae2bcc0cc2f2ec').fetch().then(message => {
-  return message.remove().then(() => console.log(message.body));
-});
+client
+  .messages('MM800f449d0399ed014aae2bcc0cc2f2ec')
+  .fetch()
+  .then((message) => {
+    return message.remove().then(() => console.log(message.body));
+  });

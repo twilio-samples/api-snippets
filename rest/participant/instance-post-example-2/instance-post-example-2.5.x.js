@@ -11,5 +11,5 @@ client.api
   .conferences('CFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .participants('CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .update({ hold: 'true', holdUrl: 'www.myapp.com/hold' })
-  .then(participant => console.log(participant.hold))
+  .then((participant) => console.log(participant.hold))
   .done();

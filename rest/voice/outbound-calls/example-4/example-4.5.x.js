@@ -16,5 +16,5 @@ client.api.calls
     statusCallbackEvent: ['initiated', 'ringing', 'answered', 'completed'],
     method: 'GET',
   })
-  .then(call => console.log(call.sid))
+  .then((call) => console.log(call.sid))
   .done();

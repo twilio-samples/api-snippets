@@ -9,4 +9,4 @@ const client = require('twilio')(accountSid, authToken);
 client
   .connectApps('CNb989fdd207b04d16aee578018ef5fd93')
   .fetch()
-  .then(connectApp => console.log(connectApp.homepageUrl));
+  .then((connectApp) => console.log(connectApp.homepageUrl));

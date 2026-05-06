@@ -15,11 +15,11 @@ service
       name: 'Stephen Curry',
       username: 'spicy_curry',
     },
-    ttl: 864000 // expires in 10 days
+    ttl: 864000, // expires in 10 days
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

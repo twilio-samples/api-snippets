@@ -11,7 +11,7 @@ client
   .recordings(recordingSid)
   .remove()
   .then(() => console.log(`Sid ${recordingSid} deleted successfully.`))
-  .catch(err => {
+  .catch((err) => {
     console.log(err.status);
     throw err;
   });

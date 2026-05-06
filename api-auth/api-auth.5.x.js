@@ -9,4 +9,4 @@ const client = twilio(apiKey, apiSecret, { accountSid: myAccountSid });
 
 // Proof request to check credentials are working.
 // Retrieving your account information
-client.api.accounts.each(accounts => console.log(accounts.sid));
+client.api.accounts.each((accounts) => console.log(accounts.sid));

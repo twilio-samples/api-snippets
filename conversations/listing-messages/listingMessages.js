@@ -5,7 +5,7 @@
  */
 
 // get the messages paginator the latest 30 messages
-let messagesPaginator = await conversation.getMessages(30, 0, "backwards");
+const messagesPaginator = await conversation.getMessages(30, 0, 'backwards');
 
 // get messages
 const messages = messagesPaginator.items;

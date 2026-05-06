@@ -5,6 +5,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.wireless.commands.list().then(response => {
+client.wireless.commands.list().then((response) => {
   console.log(response);
 });

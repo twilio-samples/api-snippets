@@ -9,4 +9,4 @@ client.api
   .accounts(accountSid)
   .outgoingCallerIds('PNe905d7e6b410746a0fb08c57e5a186f3')
   .fetch()
-  .then(callerId => console.log(callerId.phoneNumber));
+  .then((callerId) => console.log(callerId.phoneNumber));

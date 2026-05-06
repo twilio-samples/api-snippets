@@ -10,11 +10,11 @@ service
   .syncLists('MyFirstList')
   .syncListItems.create({
     data: { text: 'welcome!' },
-    ttl: 864000 // expires in 10 days
+    ttl: 864000, // expires in 10 days
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

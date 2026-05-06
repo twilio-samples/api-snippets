@@ -15,14 +15,14 @@
 // on it, you can simply call connect and pass it an Access Token directly.
 const Video = Twilio.Video;
 
-Video.connect('your-token', { name: 'room-name' }).then(function(room) {
+Video.connect('your-token', { name: 'room-name' }).then(function (room) {
   console.log('Connected to Room "%s"', room.name);
 
   room.participants.forEach(participantConnected);
   room.on('participantConnected', participantConnected);
 
   room.on('participantDisconnected', participantDisconnected);
-  room.once('disconnected', function(error) {
+  room.once('disconnected', function (error) {
     return room.participants.forEach(participantDisconnected);
   });
 });

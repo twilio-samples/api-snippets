@@ -23,9 +23,10 @@ client.taskrouter.v1
       'join',
       'leave',
       'mute',
-      'hold'
-    ]})
-  .then(reservation => {
+      'hold',
+    ],
+  })
+  .then((reservation) => {
     console.log(reservation.reservationStatus);
     console.log(reservation.workerName);
   });

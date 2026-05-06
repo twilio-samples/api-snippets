@@ -11,6 +11,6 @@ client.sip
   .update({
     friendlyName: 'Orlandos Nightclub',
   })
-  .then(ipAddress => {
+  .then((ipAddress) => {
     console.log(ipAddress.friendlyName);
   });

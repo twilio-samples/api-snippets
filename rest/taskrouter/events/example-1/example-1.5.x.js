@@ -6,6 +6,9 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 const workspaceSid = 'WSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const client = require('twilio')(accountSid, authToken);
 
-client.taskrouter.v1.workspaces(workspaceSid).events.list().then(data => {
-  data.events.forEach(event => console.log(event.event_type));
-});
+client.taskrouter.v1
+  .workspaces(workspaceSid)
+  .events.list()
+  .then((data) => {
+    data.events.forEach((event) => console.log(event.event_type));
+  });

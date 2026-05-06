@@ -11,4 +11,4 @@ client
   .update({
     status: 'completed',
   })
-  .then(call => console.log(call.direction));
+  .then((call) => console.log(call.direction));

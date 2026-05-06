@@ -16,4 +16,4 @@ client.addresses
     postalCode: '10875',
     isoCountry: 'DE',
   })
-  .then(address => console.log(address.customerName));
+  .then((address) => console.log(address.customerName));

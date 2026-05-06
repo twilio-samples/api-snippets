@@ -36,8 +36,9 @@ app.post(
     // Twilio Messaging URL - receives incoming messages from Twilio
     const response = new MessagingResponse();
 
-    response.message(`Your text to me was ${req.body.Body
-      .length} characters long.
+    response.message(`Your text to me was ${
+      req.body.Body.length
+    } characters long.
                     Webhooks are neat :)`);
 
     res.set('Content-Type', 'text/xml');

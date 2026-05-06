@@ -8,4 +8,4 @@ const client = require('twilio')(accountSid, authToken);
 client
   .messages('MM800f449d0399ed014aae2bcc0cc2f2ec')
   .update({ body: '' })
-  .then(message => process.stdout.write(message.body));
+  .then((message) => process.stdout.write(message.body));

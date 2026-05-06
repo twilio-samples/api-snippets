@@ -14,6 +14,6 @@ client.video
   .update({
     status: 'completed',
   })
-  .then(room => {
+  .then((room) => {
     console.log(room.status);
   });

@@ -17,9 +17,9 @@ fleetService
     friendlyName: 'My New Device',
     identity: 'bob@twilio.com',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

@@ -5,7 +5,6 @@ const Chat = require('twilio-chat');
 
 const accessToken = '<your accessToken>';
 
-Chat.Client.create(accessToken)
-  .then(client => {
-    // Use Programmable Chat client
-  });
+Chat.Client.create(accessToken).then((client) => {
+  // Use Programmable Chat client
+});

@@ -20,7 +20,7 @@ app.post('/register', (request, response) => {
 
   return service.bindings
     .create(params)
-    .then(binding => {
+    .then((binding) => {
       const message = 'Binding created!';
       console.log(binding);
       // Send a JSON response indicating success
@@ -29,7 +29,7 @@ app.post('/register', (request, response) => {
         message: message,
       });
     })
-    .catch(error => {
+    .catch((error) => {
       const message = 'Failed to create binding: ' + error;
       console.log(message);
 

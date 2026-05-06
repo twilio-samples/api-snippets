@@ -11,9 +11,9 @@ service
   .update({
     friendlyName: 'channel_name',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

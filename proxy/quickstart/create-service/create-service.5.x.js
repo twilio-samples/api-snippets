@@ -11,9 +11,9 @@ client.proxy.services
     uniqueName: 'My Awesome Service',
     callbackUrl: 'https://www.example.com/',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

@@ -16,4 +16,4 @@ client.calls
     statusCallbackEvent: ['initiated', 'ringing', 'answered', 'completed'],
     method: 'GET',
   })
-  .then(call => process.stdout.write(call.sid));
+  .then((call) => process.stdout.write(call.sid));

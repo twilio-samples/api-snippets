@@ -8,9 +8,9 @@ const client = require('twilio')(accountSid, authToken);
 
 client.lookups.v1
   .phoneNumbers('+15108675310')
-  .fetch({type: 'carrier'})
-  .then(response => console.log(response.carrier))
-  .catch(error => {
+  .fetch({ type: 'carrier' })
+  .then((response) => console.log(response.carrier))
+  .catch((error) => {
     if (error.status === 404) {
       console.log('No carrier information');
     } else {

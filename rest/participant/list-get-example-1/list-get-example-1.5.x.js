@@ -7,4 +7,4 @@ const client = require('twilio')(accountSid, authToken);
 
 client
   .conferences('CFbbe4632a3c49700934481addd5ce1659')
-  .participants.each(participant => console.log(participant.muted));
+  .participants.each((participant) => console.log(participant.muted));

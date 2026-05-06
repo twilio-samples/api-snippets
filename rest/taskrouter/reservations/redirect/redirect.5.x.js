@@ -18,7 +18,7 @@ client.taskrouter.v1
     redirectCallSid: 'CA123456789',
     redirectUrl: 'http://example.com/assignment_redirect',
   })
-  .then(reservation => {
+  .then((reservation) => {
     console.log(reservation.reservationStatus);
     console.log(reservation.workerName);
   });

@@ -17,26 +17,35 @@ const params = {
   To: '+18005551212',
 };
 
-
 function testUrl(method, url, params, valid) {
-  if(method === "GET") {
-    url += "?" + Object.keys(params).map(key => key + '=' + params[key]).join('&');
+  if (method === 'GET') {
+    url +=
+      '?' +
+      Object.keys(params)
+        .map((key) => key + '=' + params[key])
+        .join('&');
     params = {};
   }
-  const signatureUrl = valid ? url : "http://invalid.com"; 
-  const signature = webhooks.getExpectedTwilioSignature(authToken, signatureUrl, params);
+  const signatureUrl = valid ? url : 'http://invalid.com';
+  const signature = webhooks.getExpectedTwilioSignature(
+    authToken,
+    signatureUrl,
+    params
+  );
   const options = {
-      method: method,
-      url: url,
-      form: params,
-      headers: {
-        'X-Twilio-Signature': signature
-      }
-  }
+    method: method,
+    url: url,
+    form: params,
+    headers: {
+      'X-Twilio-Signature': signature,
+    },
+  };
 
-  request(options, function(error, response, body){
-      const validStr = valid ? "valid" : "invalid";
-      console.log(`HTTP ${method} with ${validStr} signature returned ${response.statusCode}`);
+  request(options, function (error, response, body) {
+    const validStr = valid ? 'valid' : 'invalid';
+    console.log(
+      `HTTP ${method} with ${validStr} signature returned ${response.statusCode}`
+    );
   });
 }
 

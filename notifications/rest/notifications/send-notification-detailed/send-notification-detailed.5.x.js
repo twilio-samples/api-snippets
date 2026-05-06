@@ -19,7 +19,7 @@ service.notifications
     fcm: { notification: { title: 'New alert', body: 'Hello Bob!' } },
     apn: { aps: { alert: { title: 'New alert.', body: 'Hello Bob!' } } },
   })
-  .then(notification => {
+  .then((notification) => {
     console.log(notification);
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));

@@ -15,4 +15,4 @@ client
   .then(() => {
     console.log(`Sid ${mediaSid} deleted successfully.`);
   })
-  .catch(err => console.log(err));
+  .catch((err) => console.log(err));

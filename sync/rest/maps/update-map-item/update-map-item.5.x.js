@@ -16,9 +16,9 @@ service
       username: 'spicy_curry',
     },
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

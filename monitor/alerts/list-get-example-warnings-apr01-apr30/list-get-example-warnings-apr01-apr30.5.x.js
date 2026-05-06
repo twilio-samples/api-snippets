@@ -13,4 +13,4 @@ const client = require('twilio')(accountSid, authToken);
 
 client.monitor.v1.alerts
   .list(params)
-  .then(alerts => alerts.forEach(alert => console.log(alert.alertText)));
+  .then((alerts) => alerts.forEach((alert) => console.log(alert.alertText)));

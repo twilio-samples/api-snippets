@@ -5,13 +5,13 @@ createLocalTracks({
   audio: true,
   video: { width: 640 },
 })
-  .then(function(localTracks) {
+  .then(function (localTracks) {
     return connect('$TOKEN', {
       name: 'my-room-name',
       tracks: localTracks,
     });
   })
-  .then(function(room) {
+  .then(function (room) {
     console.log('Connected to Room:', room.name);
   });
 
@@ -20,6 +20,6 @@ connect('$TOKEN', {
   audio: true,
   name: 'my-room-name',
   video: { width: 640 },
-}).then(function(room) {
+}).then(function (room) {
   console.log('Connected to Room:', room.name);
 });

@@ -11,6 +11,6 @@ client.sip
   .update({
     password: '07',
   })
-  .then(credential => {
+  .then((credential) => {
     console.log(credential.username);
   });

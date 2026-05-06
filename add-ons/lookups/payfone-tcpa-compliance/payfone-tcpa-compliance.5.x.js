@@ -14,4 +14,4 @@ client.lookups.v1
       'payfone_tcpa_compliance.RightPartyContactedDate': '20160101',
     },
   })
-  .then(number => console.log(number.addOns));
+  .then((number) => console.log(number.addOns));

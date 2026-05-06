@@ -10,7 +10,7 @@ client.taskrouter.v1
   .workspaces(workspaceSid)
   .cumulativeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.avgTaskAcceptanceTime);
     console.log(responseData.tasksCreated);
   });

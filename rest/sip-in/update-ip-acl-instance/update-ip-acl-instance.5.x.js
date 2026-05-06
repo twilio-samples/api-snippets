@@ -10,6 +10,6 @@ client.sip
   .update({
     friendlyName: 'Avons Lieutenants',
   })
-  .then(ipAccessControlList => {
+  .then((ipAccessControlList) => {
     console.log(ipAccessControlList.friendlyName);
   });

@@ -9,4 +9,4 @@ client.api
   .accounts(accountSid)
   .outgoingCallerIds('PNe536d32a3c49700934481addd5ce1659')
   .update({ friendlyName: 'My Second Line' })
-  .then(callerId => console.log(callerId.phoneNumber));
+  .then((callerId) => console.log(callerId.phoneNumber));

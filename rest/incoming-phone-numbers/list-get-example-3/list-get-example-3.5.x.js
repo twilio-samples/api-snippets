@@ -8,4 +8,6 @@ const client = require('twilio')(accountSid, authToken);
 
 const opts = { phoneNumber: '867' };
 
-client.incomingPhoneNumbers.each(opts, number => console.log(number.voiceUrl));
+client.incomingPhoneNumbers.each(opts, (number) =>
+  console.log(number.voiceUrl)
+);

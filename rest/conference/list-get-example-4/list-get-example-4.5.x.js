@@ -8,4 +8,4 @@ const client = require('twilio')(accountSid, authToken);
 
 const opts = { status: 'in-progress', dateCreatedAfter: '2016-07-06' };
 
-client.conferences.each(opts, conference => console.log(conference.sid));
+client.conferences.each(opts, (conference) => console.log(conference.sid));

@@ -9,6 +9,6 @@ client.sip.ipAccessControlLists
   .create({
     friendlyName: 'My new acl',
   })
-  .then(ipAccessControlList => {
+  .then((ipAccessControlList) => {
     process.stdout.write(ipAccessControlList.sid);
   });

@@ -10,7 +10,7 @@ credentialSid = 'CRXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 client.notify
   .credentials(credentialSid)
-  .remove(wasRemoved => {
+  .remove((wasRemoved) => {
     if (wasRemoved) {
       console.log('Credential ' + credentialSid + ' was removed.');
     }

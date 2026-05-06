@@ -10,6 +10,6 @@ client.sip
   .credentialListMappings.create({
     credentialListSid: 'CL32a3c49700934481addd5ce1659f04d2',
   })
-  .then(credentialListMapping => {
+  .then((credentialListMapping) => {
     process.stdout.write(credentialListMapping.sid);
   });

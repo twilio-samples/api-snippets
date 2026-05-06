@@ -10,7 +10,7 @@ client.taskrouter.v1
   .workspaces(workspaceSid)
   .realTimeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.tasksByStatus.pending);
     console.log(responseData.tasksByStatus.assigned);
   });

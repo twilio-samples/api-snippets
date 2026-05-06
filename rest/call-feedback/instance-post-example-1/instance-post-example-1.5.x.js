@@ -13,4 +13,4 @@ client
     qualityScore: '3',
     issue: 'imperfect-audio',
   })
-  .then(feedback => console.log(feedback.dateCreated));
+  .then((feedback) => console.log(feedback.dateCreated));

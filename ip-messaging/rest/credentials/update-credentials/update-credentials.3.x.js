@@ -10,9 +10,9 @@ client.chat
   .update({
     friendlyName: 'My other credential',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

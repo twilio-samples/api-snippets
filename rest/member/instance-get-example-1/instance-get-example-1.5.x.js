@@ -12,4 +12,4 @@ client
   .queues('QU5ef8732a3c49700934481addd5ce1659')
   .members(memberSid)
   .fetch()
-  .then(member => console.log(member.waitTime));
+  .then((member) => console.log(member.waitTime));

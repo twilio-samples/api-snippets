@@ -13,6 +13,6 @@ client.video.rooms
   .list({
     status: 'completed',
   })
-  .then(room => {
+  .then((room) => {
     console.log(room.sid);
   });

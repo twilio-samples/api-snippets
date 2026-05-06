@@ -10,9 +10,9 @@ service
   .syncLists('MyFirstList')
   .syncListPermissions('bob')
   .remove()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

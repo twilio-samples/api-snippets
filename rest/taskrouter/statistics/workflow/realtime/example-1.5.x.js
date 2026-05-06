@@ -12,7 +12,7 @@ client.taskrouter.v1
   .workflows(workflowSid)
   .realTimeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.tasks_by_status.pending);
     console.log(responseData.tasks_by_status.assigned);
   });

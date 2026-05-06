@@ -13,10 +13,10 @@ const service = client.notify.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service
   .bindings('BSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .remove()
-  .then(wasRemoved => {
+  .then((wasRemoved) => {
     console.log(wasRemoved);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

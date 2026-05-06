@@ -6,4 +6,4 @@ const authToken = process.env.TWILIO_AUTH_TOKEN;
 
 const client = require('twilio')(accountSid, authToken);
 
-client.monitor.v1.alerts.each(alert => console.log(alert.alertText));
+client.monitor.v1.alerts.each((alert) => console.log(alert.alertText));

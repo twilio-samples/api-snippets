@@ -19,6 +19,6 @@ app.post('/voice', (request, response) => {
 app.listen(3000, () => {
   console.log(
     'Now listening on port 3000. ' +
-    'Be sure to restart when you make code changes!'
+      'Be sure to restart when you make code changes!'
   );
 });

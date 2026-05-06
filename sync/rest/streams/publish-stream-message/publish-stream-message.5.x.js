@@ -15,9 +15,9 @@ service
       y: 42,
     },
   })
-  .then(message => {
+  .then((message) => {
     console.log(message.sid);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

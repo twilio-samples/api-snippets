@@ -10,9 +10,9 @@ service
   .syncMaps('Players')
   .syncMapPermissions('bob')
   .fetch()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

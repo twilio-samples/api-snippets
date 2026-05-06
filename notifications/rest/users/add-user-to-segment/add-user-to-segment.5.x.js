@@ -10,6 +10,6 @@ client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .users('User0001')
   .segmentMemberships.create({ segment: 'premium' })
-  .then(segmentMembership => console.log(segmentMembership.sid))
-  .catch(error => console.log(error))
+  .then((segmentMembership) => console.log(segmentMembership.sid))
+  .catch((error) => console.log(error))
   .done();

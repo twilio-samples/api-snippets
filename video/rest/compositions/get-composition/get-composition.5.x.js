@@ -8,10 +8,11 @@ const apiKeySecret = 'your_api_key_secret';
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const Twilio = require('twilio');
 
-const client = new Twilio(apiKeySid, apiKeySecret, {accountSid: accountSid});
+const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-composition = client.video.compositions('CJXXXX')
+composition = client.video
+  .compositions('CJXXXX')
   .fetch()
-  .then(composition =>{
+  .then((composition) => {
     console.log('Read Composition with SID=' + composition.sid);
   });

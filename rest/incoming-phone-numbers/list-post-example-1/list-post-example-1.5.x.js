@@ -12,4 +12,4 @@ client.incomingPhoneNumbers
     phoneNumber: '+15105647903',
     voiceMethod: 'GET',
   })
-  .then(number => console.log(number.sid));
+  .then((number) => console.log(number.sid));

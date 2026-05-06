@@ -12,6 +12,6 @@ client.notify
     identity: 'User0001',
     segment: ['premium', 'fitness-lifestyle'],
   })
-  .then(user => console.log(user.sid))
-  .catch(error => console.log(error))
+  .then((user) => console.log(user.sid))
+  .catch((error) => console.log(error))
   .done();

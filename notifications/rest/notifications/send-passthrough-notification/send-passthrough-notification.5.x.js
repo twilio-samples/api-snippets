@@ -24,10 +24,10 @@ service.notifications
     ],
     body: 'Hello Bob',
   })
-  .then(notification => {
+  .then((notification) => {
     console.log(notification);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

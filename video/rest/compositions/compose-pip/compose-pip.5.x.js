@@ -10,16 +10,18 @@ const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
 
 const Twilio = require('twilio');
 
-const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {accountSid: ACCOUNT_SID});
+const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {
+  accountSid: ACCOUNT_SID,
+});
 
-client.video.compositions.
-  create({
+client.video.compositions
+  .create({
     roomSid: 'RMXXXX',
     audioSources: ['MTAAAA', 'soundtrack'],
     videoLayout: {
       main: {
         z_pos: 1,
-        video_sources: ['screen-presentation']
+        video_sources: ['screen-presentation'],
       },
       pip: {
         z_pos: 2,
@@ -27,13 +29,13 @@ client.video.compositions.
         y_pos: 30,
         width: 240,
         height: 180,
-        video_sources: ['MTBBBB']
-      }
+        video_sources: ['MTBBBB'],
+      },
     },
     statusCallback: 'http://my.server.org/callbacks',
     resolution: '1280x720',
-    format: 'mp4'
+    format: 'mp4',
   })
-  .then(composition =>{
+  .then((composition) => {
     console.log('Created Composition with SID=' + composition.sid);
   });

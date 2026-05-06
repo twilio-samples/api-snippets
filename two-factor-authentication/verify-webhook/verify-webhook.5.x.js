@@ -9,7 +9,7 @@ const crypto = require('crypto');
 function verifyCallback(req, apiKey) {
   const url = req.protocol + '://' + req.get('host') + req.originalUrl;
   const method = req.method;
-  const params = req.body;	// needs `npm i body-parser` on Express 4
+  const params = req.body; // needs `npm i body-parser` on Express 4
 
   // Sort the params
   const sortedParams = qs

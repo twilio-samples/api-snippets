@@ -14,6 +14,6 @@ client.video.rooms
     status: 'completed',
     uniqueName: 'DailyStandup',
   })
-  .then(room => {
+  .then((room) => {
     console.log(room.sid);
   });

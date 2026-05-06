@@ -9,6 +9,9 @@ const Twilio = require('twilio');
 
 const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-client.video.rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXX').fetch().then(room => {
-  console.log(room.uniqueName);
-});
+client.video
+  .rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  .fetch()
+  .then((room) => {
+    console.log(room.uniqueName);
+  });

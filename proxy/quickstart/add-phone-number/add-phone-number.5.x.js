@@ -9,9 +9,9 @@ const client = require('twilio')(accountSid, authToken);
 client.proxy
   .services('KSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .phoneNumbers.create({ sid: 'PNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

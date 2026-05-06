@@ -10,6 +10,6 @@ client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .users('User0001')
   .fetch()
-  .then(user => console.log(user.sid))
-  .catch(error => console.log(error))
+  .then((user) => console.log(user.sid))
+  .catch((error) => console.log(error))
   .done();

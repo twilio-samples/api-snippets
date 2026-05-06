@@ -12,6 +12,6 @@ client.taskrouter.v1
   .taskQueues(taskQueueSid)
   .realTimeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.longestTaskWaitingAge);
   });

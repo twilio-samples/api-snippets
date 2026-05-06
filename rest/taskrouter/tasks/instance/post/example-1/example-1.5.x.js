@@ -14,7 +14,7 @@ client.taskrouter.v1
   .update({
     attributes: '{"type":"support"}',
   })
-  .then(task => console.log(task.attributes));
+  .then((task) => console.log(task.attributes));
 
 // cancel a task
 client.taskrouter.v1
@@ -24,7 +24,7 @@ client.taskrouter.v1
     assignmentStatus: 'canceled',
     reason: 'waiting too long',
   })
-  .then(task => {
+  .then((task) => {
     console.log(task.assignmentStatus);
     console.log(task.reason);
   });

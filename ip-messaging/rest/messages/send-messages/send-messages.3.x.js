@@ -11,9 +11,9 @@ service
   .messages.create({
     body: 'New message',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

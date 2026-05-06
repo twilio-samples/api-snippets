@@ -8,25 +8,25 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-const compositionSid = "CJXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const compositionSid = 'CJXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const uri =
-  "https://video.twilio.com/v1/Compositions/" +
+  'https://video.twilio.com/v1/Compositions/' +
   compositionSid +
-  "/Media?Ttl=3600";
+  '/Media?Ttl=3600';
 
 client
   .request({
-    method: "GET",
+    method: 'GET',
     uri: uri,
   })
   .then((response) => {
     // For example, download the media to a local file
-    const file = fs.createWriteStream("myFile.mp4");
+    const file = fs.createWriteStream('myFile.mp4');
     const r = request(response.body.redirect_to);
-    r.on("response", (res) => {
+    r.on('response', (res) => {
       res.pipe(file);
     });
   })
   .catch((error) => {
-    console.log("Error fetching /Media resource " + error);
+    console.log('Error fetching /Media resource ' + error);
   });

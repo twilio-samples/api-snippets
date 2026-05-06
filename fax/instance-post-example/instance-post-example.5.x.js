@@ -10,9 +10,9 @@ client.fax.v1
   .update({
     status: 'canceled',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response.sid);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

@@ -9,15 +9,15 @@ const client = require('twilio')(accountSid, authToken).pricing;
 client.voice
   .numbers('+15108675310')
   .fetch({
-    originationNumber: '+12421234567'
+    originationNumber: '+12421234567',
   })
-  .then(numbers => {
+  .then((numbers) => {
     console.log(number.outboundCallPriceWithOrigin.current_price);
-    numbers.outboundCallPriceWithOrigin.forEach(price => {
+    numbers.outboundCallPriceWithOrigin.forEach((price) => {
       console.log(price.current_price);
     });
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
     throw error;
   });

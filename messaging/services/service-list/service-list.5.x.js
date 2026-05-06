@@ -8,9 +8,9 @@ const client = require('twilio')(accountSid, authToken);
 
 client.messaging.services
   .list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

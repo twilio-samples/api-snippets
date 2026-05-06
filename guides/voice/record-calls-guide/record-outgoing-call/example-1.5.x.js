@@ -13,4 +13,4 @@ client.calls
     from: '+15017122661',
     record: 'true',
   })
-  .then(call => console.log(call.sid));
+  .then((call) => console.log(call.sid));

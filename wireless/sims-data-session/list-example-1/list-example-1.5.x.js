@@ -8,6 +8,6 @@ const client = require('twilio')(accountSid, authToken);
 client.wireless
   .sims('DEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
   .dataSessions.list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   });

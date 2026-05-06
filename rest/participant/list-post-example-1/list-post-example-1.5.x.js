@@ -11,4 +11,4 @@ client
     to: '+15624421212',
     from: '+18180021216',
   })
-  .then(participant => console.log(participant.sid));
+  .then((participant) => console.log(participant.sid));

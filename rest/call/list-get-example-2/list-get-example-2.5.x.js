@@ -6,6 +6,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.calls.each({ status: 'completed', startTime: '2009-07-06' }, call =>
+client.calls.each({ status: 'completed', startTime: '2009-07-06' }, (call) =>
   console.log(call.direction)
 );

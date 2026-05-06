@@ -10,7 +10,7 @@ client.api.account.newKeys
   .create({
     friendlyName: 'User Joey',
   })
-  .then(key => {
+  .then((key) => {
     process.stdout.write(key.sid);
     process.stdout.write(key.secret);
   });

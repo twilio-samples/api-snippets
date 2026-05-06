@@ -9,4 +9,4 @@ const client = require('twilio')(accountSid, authToken);
 client.lookups.v1
   .phoneNumbers('(510) 867-5310')
   .fetch({ countryCode: 'US', type: 'carrier' })
-  .then(number => console.log(number.carrier.type, number.carrier.name));
+  .then((number) => console.log(number.carrier.type, number.carrier.name));

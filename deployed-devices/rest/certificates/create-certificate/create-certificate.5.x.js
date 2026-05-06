@@ -17,9 +17,9 @@ fleetService.certificates
     friendlyName: 'Woody',
     certificateData: fs.readFileSync('/path/to/certificate.pem'),
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

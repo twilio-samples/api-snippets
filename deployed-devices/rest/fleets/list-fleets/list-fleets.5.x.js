@@ -7,9 +7,9 @@ const client = new Twilio(accountSid, authToken);
 
 client.preview.deployed_devices.fleets
   .list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

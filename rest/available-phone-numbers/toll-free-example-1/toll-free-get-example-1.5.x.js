@@ -9,10 +9,10 @@ const client = require('twilio')(accountSid, authToken);
 client
   .availablePhoneNumbers('US')
   .tollFree.list()
-  .then(availablePhoneNumbers => {
+  .then((availablePhoneNumbers) => {
     const number = availablePhoneNumbers[0];
     return client.incomingPhoneNumbers.create({
       phoneNumber: number.phoneNumber,
     });
   })
-  .then(purchasedNumber => console.log(purchasedNumber.sid));
+  .then((purchasedNumber) => console.log(purchasedNumber.sid));

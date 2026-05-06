@@ -6,11 +6,14 @@ var apiKeySecret = 'your_api_key_secret';
 var accountSid = process.env.TWILIO_ACCOUNT_SID;
 var Twilio = require('twilio');
 
-var client = new Twilio(apiKeySid, apiKeySecret, {accountSid: accountSid});
+var client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-client.video.rooms('DailyStandup')
+client.video
+  .rooms('DailyStandup')
   .participants.get('Alice')
   .publishedTracks.list()
-  .then(publishedTracks => {
-    publishedTracks.forEach(publishedTrack => console.log(publishedTrack.sid))
+  .then((publishedTracks) => {
+    publishedTracks.forEach((publishedTrack) =>
+      console.log(publishedTrack.sid)
+    );
   });

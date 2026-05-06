@@ -10,14 +10,18 @@ const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
 
 const Twilio = require('twilio');
 
-const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {accountSid: ACCOUNT_SID});
-
-client.video.rooms('RMXXXX').participants.get('PAXXXX')
-.subscribedTracks.get('MTXXXX')
-.fetch()
-.then(subscription => {
-  console.log('Read track subscription with sid = ' + subscription.sid);
-})
-.catch(error => {
-  console.log('Error fetching subscribed track' + error)
+const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {
+  accountSid: ACCOUNT_SID,
 });
+
+client.video
+  .rooms('RMXXXX')
+  .participants.get('PAXXXX')
+  .subscribedTracks.get('MTXXXX')
+  .fetch()
+  .then((subscription) => {
+    console.log('Read track subscription with sid = ' + subscription.sid);
+  })
+  .catch((error) => {
+    console.log('Error fetching subscribed track' + error);
+  });

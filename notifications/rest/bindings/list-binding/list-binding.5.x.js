@@ -16,10 +16,10 @@ service.bindings
     startDate: new Date('2015-08-18'),
     tag: 'new user',
   })
-  .then(bindings => {
-    bindings.forEach(binding => console.log(binding.identity));
+  .then((bindings) => {
+    bindings.forEach((binding) => console.log(binding.identity));
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

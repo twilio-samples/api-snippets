@@ -8,12 +8,12 @@ const client = require('twilio')(accountSid, authToken).pricing;
 
 client.voice.countries
   .list()
-  .then(countries => {
-    countries.forEach(country => {
+  .then((countries) => {
+    countries.forEach((country) => {
       console.log(country.isoCountry);
     });
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
     throw error;
   });

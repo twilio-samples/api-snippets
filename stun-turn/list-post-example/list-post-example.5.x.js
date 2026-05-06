@@ -9,4 +9,4 @@ const client = require('twilio')(accountSid, authToken);
 client.api
   .accounts('ACaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
   .tokens.create({})
-  .then(token => console.log(token.username));
+  .then((token) => console.log(token.username));

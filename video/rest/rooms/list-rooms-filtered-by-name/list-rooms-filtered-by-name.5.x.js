@@ -13,6 +13,6 @@ client.video.rooms
   .list({
     uniqueName: 'DailyStandup',
   })
-  .then(room => {
-    recordings.forEach(recording => console.log(recording.sid));
+  .then((room) => {
+    recordings.forEach((recording) => console.log(recording.sid));
   });
