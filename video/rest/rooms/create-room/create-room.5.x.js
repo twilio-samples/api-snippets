@@ -13,6 +13,6 @@ client.video.rooms
   .create({
     uniqueName: 'DailyStandup',
   })
-  .then(room => {
+  .then((room) => {
     console.log(room.sid);
   });

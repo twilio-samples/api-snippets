@@ -10,18 +10,22 @@ const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
 
 const Twilio = require('twilio');
 
-const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {accountSid: ACCOUNT_SID});
-
-client.video.rooms('RMXXXX').participants.get('Customer')
-.subscribeRules.update({
-  rules: [
-    {"type": "include", "all": true},
-    {"type": "exclude", "publisher": "Supervisor"}
-  ]
-})
-.then(result => {
-  console.log('Subscribe Rules updated successfully')
-})
-.catch(error => {
-  console.log('Error updating rules ' + error)
+const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {
+  accountSid: ACCOUNT_SID,
 });
+
+client.video
+  .rooms('RMXXXX')
+  .participants.get('Customer')
+  .subscribeRules.update({
+    rules: [
+      { type: 'include', all: true },
+      { type: 'exclude', publisher: 'Supervisor' },
+    ],
+  })
+  .then((result) => {
+    console.log('Subscribe Rules updated successfully');
+  })
+  .catch((error) => {
+    console.log('Error updating rules ' + error);
+  });

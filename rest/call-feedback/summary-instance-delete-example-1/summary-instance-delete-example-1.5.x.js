@@ -11,7 +11,7 @@ const feedbackSummarySid = 'FSa346467ca321c71dbd5e12f627deb854';
 client.calls
   .feedbackSummaries(feedbackSummarySid)
   .remove()
-  .then(result => {
+  .then((result) => {
     console.log(`Sid ${feedbackSummarySid} deleted successfully.`);
   })
-  .catch(err => console.log(err));
+  .catch((err) => console.log(err));

@@ -13,13 +13,13 @@ const phoneNumbers = [
   'PN2a0747eba6abf96b7e3c3ff0b4530f6e',
 ];
 
-phoneNumbers.forEach(phoneNumber => {
+phoneNumbers.forEach((phoneNumber) => {
   service.phoneNumbers
     .create({ phoneNumberSid: phoneNumber })
-    .then(response => {
+    .then((response) => {
       console.log(response);
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
     });
 });

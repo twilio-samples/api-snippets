@@ -8,15 +8,15 @@ const apiKeySecret = 'your_api_key_secret';
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const Twilio = require('twilio');
 
-const client = new Twilio(apiKeySid, apiKeySecret, {accountSid: accountSid});
+const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-client.video.compositionHooks.
-  list({
-    enabled: true
+client.video.compositionHooks
+  .list({
+    enabled: true,
   })
-  .then(hooks =>{
-    console.log("Found " + hooks.length + " Composition Hooks.");
-    hooks.forEach(function(hook){
+  .then((hooks) => {
+    console.log('Found ' + hooks.length + ' Composition Hooks.');
+    hooks.forEach(function (hook) {
       console.log('Read hook with SID=' + hook.sid);
     });
   });

@@ -11,4 +11,4 @@ client.messages
     to: '+14108675310',
     from: '+15005550006',
   })
-  .then(sms => process.stdout.write(sms.sid));
+  .then((sms) => process.stdout.write(sms.sid));

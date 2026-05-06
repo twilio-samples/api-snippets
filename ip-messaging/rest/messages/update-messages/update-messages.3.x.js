@@ -12,9 +12,9 @@ service
   .update({
     body: 'New body content.',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

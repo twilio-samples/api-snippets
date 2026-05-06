@@ -12,7 +12,7 @@ client.taskrouter.v1
   .workflows(workflowSid)
   .cumulativeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.avgTaskAcceptanceTime);
     console.log(responseData.tasksCreated);
   });

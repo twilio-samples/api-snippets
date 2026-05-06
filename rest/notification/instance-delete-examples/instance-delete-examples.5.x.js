@@ -11,4 +11,4 @@ client
   .notifications(notificationSid)
   .remove()
   .then(() => console.log(`Sid ${notificationSid} deleted successfully.`))
-  .catch(err => console.log(err.status));
+  .catch((err) => console.log(err.status));

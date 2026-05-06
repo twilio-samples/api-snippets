@@ -11,6 +11,6 @@ client.wireless.commands
     sim: 'AliceSmithSmartMeter',
     commandMode: 'binary',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   });

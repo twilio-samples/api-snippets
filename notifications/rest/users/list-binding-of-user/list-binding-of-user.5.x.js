@@ -10,6 +10,6 @@ client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .users('User0001')
   .bindings.list()
-  .then(bindings => console.log(bindings[0].sid))
-  .catch(error => console.log(error))
+  .then((bindings) => console.log(bindings[0].sid))
+  .catch((error) => console.log(error))
   .done();

@@ -3,7 +3,7 @@
 const formData = new FormData();
 formData.append('file', $('#formInputFile')[0].files[0]);
 // get desired channel (for example, with getChannelBySid promise)
-chatClient.getChannelBySid(channelSid).then(function(channel) {
+chatClient.getChannelBySid(channelSid).then(function (channel) {
   // send media with all FormData parsed atrtibutes
   channel.sendMessage(formData);
 });
@@ -11,7 +11,7 @@ chatClient.getChannelBySid(channelSid).then(function(channel) {
 // example for sending media message as String
 // -------------------------------------------
 // get desired channel (for example, with getChannelBySid promise)
-chatClient.getChannelBySid(channelSid).then(function(channel) {
+chatClient.getChannelBySid(channelSid).then(function (channel) {
   // send SVG image as string with content type image/svg+xml; charset=utf-8
   channel.sendMessage({
     contentType: 'image/svg+xml; charset=utf-8',
@@ -25,7 +25,7 @@ chatClient.getChannelBySid(channelSid).then(function(channel) {
 // example for sending media message as Buffer
 // -------------------------------------------
 // get desired channel (for example, with getChannelBySid promise)
-chatClient.getChannelBySid(channelSid).then(function(channel) {
+chatClient.getChannelBySid(channelSid).then(function (channel) {
   // send PNG image as Buffer with content type image/png
   channel.sendMessage({
     contentType: 'image/png',

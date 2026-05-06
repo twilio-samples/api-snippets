@@ -17,9 +17,9 @@ service.bindings
     address: 'device_token',
     tag: ['premium', 'new user'],
   })
-  .then(binding => {
+  .then((binding) => {
     console.log(binding);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

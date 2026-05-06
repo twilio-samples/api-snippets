@@ -5,8 +5,8 @@ const url = require('url').parse(
 url.auth = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_auth_token';
 
 https
-  .get(url, res => {
-    res.on('data', jsonString => {
+  .get(url, (res) => {
+    res.on('data', (jsonString) => {
       const lookup = JSON.parse(jsonString);
       const numberMatch =
         lookup.add_ons.results &&
@@ -17,6 +17,6 @@ https
       );
     });
   })
-  .on('error', e => {
+  .on('error', (e) => {
     console.log(`Got error: ${e.message}`);
   });

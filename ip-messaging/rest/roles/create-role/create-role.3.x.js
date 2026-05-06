@@ -12,9 +12,9 @@ service.roles
     type: 'deployment',
     permission: ['createChannel', 'joinChannel'],
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

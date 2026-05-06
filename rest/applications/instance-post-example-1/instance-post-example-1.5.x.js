@@ -12,4 +12,4 @@ client
     voiceUrl: 'http://demo.twilio.com/docs/voice.xml',
     smsUrl: 'http://demo.twilio.com/docs/sms.xml',
   })
-  .then(app => console.log(app.voiceUrl));
+  .then((app) => console.log(app.voiceUrl));

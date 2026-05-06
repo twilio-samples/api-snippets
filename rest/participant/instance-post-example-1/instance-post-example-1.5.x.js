@@ -9,4 +9,4 @@ client
   .conferences('CFbbe4632a3c49700934481addd5ce1659')
   .participants('CA386025c9bf5d6052a1d1ea42b4d16662')
   .update({ muted: 'True' })
-  .then(participant => console.log(participant.muted));
+  .then((participant) => console.log(participant.muted));

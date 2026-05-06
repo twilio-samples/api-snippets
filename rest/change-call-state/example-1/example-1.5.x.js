@@ -12,4 +12,4 @@ client
     url: 'http://demo.twilio.com/docs/voice.xml',
     method: 'POST',
   })
-  .then(call => console.log(call.to));
+  .then((call) => console.log(call.to));

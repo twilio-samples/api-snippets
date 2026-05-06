@@ -12,4 +12,4 @@ client.applications
     voiceUrl: 'http://demo.twilio.com/docs/voice.xml',
     voiceMethod: 'GET',
   })
-  .then(app => process.stdout.write(app.sid));
+  .then((app) => process.stdout.write(app.sid));

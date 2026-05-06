@@ -11,4 +11,4 @@ const filterOpts = {
   to: '+15558675310',
 };
 
-client.calls.each(filterOpts, call => console.log(call.startTime));
+client.calls.each(filterOpts, (call) => console.log(call.startTime));

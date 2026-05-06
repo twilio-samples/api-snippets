@@ -15,6 +15,6 @@ const bindingOpts = {
 client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .bindings.create(bindingOpts)
-  .then(binding => console.log(binding.sid))
-  .catch(error => console.log(error))
+  .then((binding) => console.log(binding.sid))
+  .catch((error) => console.log(error))
   .done();

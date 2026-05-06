@@ -11,6 +11,6 @@ const filterOpts = {
   log: '1',
 };
 
-client.notifications.each(filterOpts, notification =>
+client.notifications.each(filterOpts, (notification) =>
   console.log(notification.requestUrl)
 );

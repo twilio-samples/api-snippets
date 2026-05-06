@@ -13,6 +13,6 @@ client.video
   .rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .recordings('RTXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(recording => {
+  .then((recording) => {
     console.log(recording.type);
   });

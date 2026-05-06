@@ -10,6 +10,6 @@ client.wireless.commands
     command: 'wakeup',
     sim: 'AliceSmithSmartMeter',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   });

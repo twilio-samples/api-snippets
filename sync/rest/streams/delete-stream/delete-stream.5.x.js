@@ -9,9 +9,9 @@ const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service
   .syncStreams('MyStream')
   .remove()
-  .then(didDelete => {
+  .then((didDelete) => {
     console.log(didDelete);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

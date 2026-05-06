@@ -10,6 +10,6 @@ const promise = client.api.v2010
   .accounts(accountSid)
   .recordings(recordingId)
   .fetch();
-promise.then(response => {
+promise.then((response) => {
   console.log(response);
 });

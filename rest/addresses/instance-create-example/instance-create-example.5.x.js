@@ -15,4 +15,4 @@ client.addresses
     postalCode: '150',
     isoCountry: 'AX',
   })
-  .then(address => console.log(address.customerName));
+  .then((address) => console.log(address.customerName));

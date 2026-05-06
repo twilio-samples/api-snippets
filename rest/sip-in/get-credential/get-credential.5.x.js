@@ -9,4 +9,4 @@ client.sip
   .credentialLists('CL32a3c49700934481addd5ce1659f04d2')
   .credentials('SC32a3c49700934481addd5ce1659f04d2')
   .fetch()
-  .then(credential => console.log(credential.username));
+  .then((credential) => console.log(credential.username));

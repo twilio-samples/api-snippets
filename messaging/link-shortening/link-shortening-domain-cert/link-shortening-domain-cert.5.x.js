@@ -54,10 +54,11 @@ vt+d8vFlIYHSv9LIWhKLTTXl5AGuNlXp2+8o2AjI9QKBgQDXQzJWmiVmTsBYOTWD
 YTp2o4Tn0HlLk3KHaBKHGiO0YGVuhXa2jz0u3jg5LLG7vusOZhQBkd4tN7L10ZMM
 l5jSr8uncW4/3gZ/O/URQZcMH+Uzttw8nVL3mzLS/M600I+ryZdLkrmtDQWUBRwj
 fRre92n5B+9AgpEl6RyegsXToA==
------END PRIVATE KEY-----`
+-----END PRIVATE KEY-----`;
 
-client.messaging.v1.domainCerts('DNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+client.messaging.v1
+  .domainCerts('DNXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .update({
-     tlsCert: certAndPrivateKey
-   })
-  .then(domain_certs => console.log(domain_certs.domainName));
+    tlsCert: certAndPrivateKey,
+  })
+  .then((domain_certs) => console.log(domain_certs.domainName));

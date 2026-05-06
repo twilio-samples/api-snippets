@@ -23,7 +23,7 @@ service.notifications
       },
     },
   })
-  .then(notification => {
+  .then((notification) => {
     console.log(notification);
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));

@@ -10,4 +10,4 @@ client
   .calls('CA42ed11f93dc08b952027ffbc406d0868')
   .feedback()
   .fetch()
-  .then(feedback => console.log(feedback.dateCreated));
+  .then((feedback) => console.log(feedback.dateCreated));

@@ -11,6 +11,6 @@ client.notify
   .users('User0001')
   .segmentMemberships('premium')
   .remove()
-  .then(success => console.log(success))
-  .catch(error => console.log(error))
+  .then((success) => console.log(success))
+  .catch((error) => console.log(error))
   .done();

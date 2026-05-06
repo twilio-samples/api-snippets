@@ -11,10 +11,10 @@ const client = new Twilio(accountSid, authToken);
 client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(service => {
+  .then((service) => {
     console.log(service.sid);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

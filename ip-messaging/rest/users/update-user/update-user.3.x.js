@@ -11,9 +11,9 @@ service
   .update({
     friendlyName: 'Bob',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

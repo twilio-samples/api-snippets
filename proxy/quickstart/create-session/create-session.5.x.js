@@ -9,9 +9,9 @@ const client = require('twilio')(accountSid, authToken);
 client.proxy
   .services('KSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .sessions.create({ uniqueName: 'MyFirstSession' })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err);
   });

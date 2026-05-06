@@ -11,6 +11,6 @@ client.sip
     friendlyName: 'Little Kevin',
     voiceMethod: 'GET',
   })
-  .then(domain => {
+  .then((domain) => {
     console.log(domain.domainName);
   });

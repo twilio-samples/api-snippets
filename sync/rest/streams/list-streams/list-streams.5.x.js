@@ -8,9 +8,9 @@ const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 
 service.syncStreams
   .list()
-  .then(streams => {
+  .then((streams) => {
     console.log(streams[0].sid);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

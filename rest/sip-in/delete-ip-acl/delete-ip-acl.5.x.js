@@ -8,10 +8,10 @@ const client = require('twilio')(accountSid, authToken);
 client.sip
   .ipAccessControlLists('AL32a3c49700934481addd5ce1659f04d2')
   .remove()
-  .then(data => {
+  .then((data) => {
     console.log('Sid IP32a3c49700934481addd5ce1659f04d2 deleted successfully.');
   })
-  .catch(err => {
+  .catch((err) => {
     console.log(err.status);
     throw err.message;
   });

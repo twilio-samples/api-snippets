@@ -10,9 +10,9 @@ service
   .channels('CHXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .members('MBXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

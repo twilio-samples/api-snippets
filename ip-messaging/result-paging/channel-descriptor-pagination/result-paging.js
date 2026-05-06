@@ -1,8 +1,8 @@
 // Get messages from the newest to oldest
 channel
   .getMessages(20 /* by pages of 20 messages */)
-  .then(function(messagesPage) {
-    messagesPage.items.forEach(function(message) {
+  .then(function (messagesPage) {
+    messagesPage.items.forEach(function (message) {
       // do stuff for each message
     });
     // note, that by default pages are in "backwards" order,
@@ -13,7 +13,7 @@ channel
   });
 
 // Get messages from the message with id 3 to newest
-channel.getMessages(20, 3, 'forward').then(function(messagesPage) {
+channel.getMessages(20, 3, 'forward').then(function (messagesPage) {
   /* handle page the same way as above */
 });
 
@@ -22,7 +22,7 @@ channel.getMessages(20, 3, 'forward').then(function(messagesPage) {
 // some boilerplate here. One of the way to go through all messages would be
 // like this:
 function processPage(page) {
-  page.items.forEach(function(message) {
+  page.items.forEach(function (message) {
     /* do something for message */
   });
   if (page.hasNextPage) {

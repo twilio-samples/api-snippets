@@ -12,4 +12,4 @@ client.messages
     from: '+14158141829',
     mediaUrl: 'http://www.example.com/cheeseburger.png',
   })
-  .then(message => process.stdout.write(message.sid));
+  .then((message) => process.stdout.write(message.sid));

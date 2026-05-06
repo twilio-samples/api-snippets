@@ -16,17 +16,14 @@ const identity = 'user@example.com';
 // on a given device
 const chatGrant = new ChatGrant({
   serviceSid: serviceSid,
-  push_credential_sid: pushCredentialSid
+  push_credential_sid: pushCredentialSid,
 });
 
 // Create an access token which we will sign and return to the client,
 // containing the grant we just created
-const token = new AccessToken(
-  twilioAccountSid,
-  twilioApiKey,
-  twilioApiSecret,
-  {identity: identity}
-);
+const token = new AccessToken(twilioAccountSid, twilioApiKey, twilioApiSecret, {
+  identity: identity,
+});
 
 token.addGrant(chatGrant);
 

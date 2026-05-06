@@ -7,6 +7,6 @@ const client = require('twilio')(accountSid, authToken);
 
 const filterOpts = { messageDate: '2016-07-06' };
 
-client.notifications.each(filterOpts, notification =>
+client.notifications.each(filterOpts, (notification) =>
   console.log(notification.messageText)
 );

@@ -10,15 +10,19 @@ const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
 
 const Twilio = require('twilio');
 
-const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {accountSid: ACCOUNT_SID});
-
-client.video.rooms('RMXXXX').participants.get('PAXXXX')
-.subscribeRules.fetch()
-.then(subscribeRules => {
-  subscribeRules.rules.forEach(rule => {
-    console.log('Read rule with type = ' + rule.type);
-  });
-})
-.catch(error => {
-  console.log('Error fetching subscribed rules ' + error)
+const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {
+  accountSid: ACCOUNT_SID,
 });
+
+client.video
+  .rooms('RMXXXX')
+  .participants.get('PAXXXX')
+  .subscribeRules.fetch()
+  .then((subscribeRules) => {
+    subscribeRules.rules.forEach((rule) => {
+      console.log('Read rule with type = ' + rule.type);
+    });
+  })
+  .catch((error) => {
+    console.log('Error fetching subscribed rules ' + error);
+  });

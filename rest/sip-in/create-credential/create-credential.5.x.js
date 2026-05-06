@@ -11,6 +11,6 @@ client.sip
     username: 'WeeBey',
     password: '05',
   })
-  .then(credential => {
+  .then((credential) => {
     process.stdout.write(credential.sid);
   });

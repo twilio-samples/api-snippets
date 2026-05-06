@@ -9,4 +9,4 @@ const client = require('twilio')(accountSid, authToken);
 client
   .keys('SK2a0747eba6abf96b7e3c3ff0b4530f6e')
   .fetch()
-  .then(key => console.log(key.friendlyName));
+  .then((key) => console.log(key.friendlyName));

@@ -10,9 +10,9 @@ const fleet = client.preview.deployed_devices.fleets(
 
 fleet.keys
   .list()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

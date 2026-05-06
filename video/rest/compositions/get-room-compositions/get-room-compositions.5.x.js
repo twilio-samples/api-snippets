@@ -8,15 +8,15 @@ const apiKeySecret = 'your_api_key_secret';
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const Twilio = require('twilio');
 
-const client = new Twilio(apiKeySid, apiKeySecret, {accountSid: accountSid});
+const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-client.video.compositions.
-  list({
-    roomSid: 'RMXXXX'
+client.video.compositions
+  .list({
+    roomSid: 'RMXXXX',
   })
-  .then(compositions =>{
-    console.log("Found " + compositions.length + " compositions.");
-    compositions.forEach(function(composition){
+  .then((compositions) => {
+    console.log('Found ' + compositions.length + ' compositions.');
+    compositions.forEach(function (composition) {
       console.log('Read compositionSid=' + composition.sid);
     });
   });

@@ -6,4 +6,4 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.addresses.each(address => console.log(address.friendlyName));
+client.addresses.each((address) => console.log(address.friendlyName));

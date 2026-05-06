@@ -9,11 +9,11 @@ const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service.syncStreams
   .create({
     uniqueName: 'MyStream',
-    ttl: 1814400
+    ttl: 1814400,
   })
-  .then(stream => {
+  .then((stream) => {
     console.log(stream.sid);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

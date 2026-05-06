@@ -8,8 +8,8 @@ const client = require('twilio')(accountSid, authToken);
 client
   .recordings('REXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(recording => {
-    recording.transcriptions().each(transcription => {
+  .then((recording) => {
+    recording.transcriptions().each((transcription) => {
       console.log(transcription.sid);
       console.log(transcription.transcriptionText);
     });

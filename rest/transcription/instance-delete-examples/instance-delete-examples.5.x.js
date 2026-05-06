@@ -11,7 +11,7 @@ client
   .transcriptions(transcriptionSid)
   .remove()
   .then(() => console.log(`Sid ${transcriptionSid} deleted successfully.`))
-  .catch(err => {
+  .catch((err) => {
     console.log(err.status);
     throw err;
   });

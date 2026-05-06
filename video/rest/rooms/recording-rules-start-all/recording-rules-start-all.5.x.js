@@ -5,7 +5,7 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.video.rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-            .recordingRules
-            .update({rules: [{"type": "include", "all": true}]})
-            .then(recording_rules => console.log(recording_rules.roomSid));
+client.video
+  .rooms('RMXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  .recordingRules.update({ rules: [{ type: 'include', all: true }] })
+  .then((recording_rules) => console.log(recording_rules.roomSid));

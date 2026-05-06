@@ -12,6 +12,6 @@ const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 client.video
   .recordings('RTXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(recording => {
+  .then((recording) => {
     console.log(recording.type);
   });

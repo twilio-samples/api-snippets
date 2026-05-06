@@ -7,4 +7,4 @@ const client = require('twilio')(accountSid, authToken);
 
 client.queues
   .create({ friendlyName: 'newqueue' })
-  .then(queue => process.stdout.write(queue.sid));
+  .then((queue) => process.stdout.write(queue.sid));

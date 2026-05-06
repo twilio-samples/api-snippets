@@ -10,6 +10,6 @@ client.sip
   .update({
     friendlyName: 'Marlos Lieutenants',
   })
-  .then(credentialList => {
+  .then((credentialList) => {
     console.log(credentialList.friendlyName);
   });

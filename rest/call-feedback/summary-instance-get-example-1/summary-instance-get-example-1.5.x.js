@@ -11,4 +11,4 @@ const feedbackSummarySid = 'FSa346467ca321c71dbd5e12f627deb854';
 client.calls
   .feedbackSummaries(feedbackSummarySid)
   .fetch()
-  .then(feedback => console.log(feedback.dateCreated));
+  .then((feedback) => console.log(feedback.dateCreated));

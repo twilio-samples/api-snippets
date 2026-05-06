@@ -9,4 +9,4 @@ const callSid = 'CAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
 client.api
   .calls(callSid)
-  .recordings.each(recording => console.log(recording.duration));
+  .recordings.each((recording) => console.log(recording.duration));

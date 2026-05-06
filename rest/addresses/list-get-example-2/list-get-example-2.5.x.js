@@ -8,5 +8,5 @@ const client = require('twilio')(accountSid, authToken);
 
 client.addresses.each(
   { customerName: 'Customer 123' },
-  address => address.friendlyName
+  (address) => address.friendlyName
 );

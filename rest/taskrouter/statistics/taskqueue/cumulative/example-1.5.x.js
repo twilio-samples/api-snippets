@@ -12,6 +12,6 @@ client.taskrouter.v1
   .taskQueues(taskQueueSid)
   .cumulativeStatistics()
   .fetch()
-  .then(responseData => {
+  .then((responseData) => {
     console.log(responseData.reservations_accepted);
   });

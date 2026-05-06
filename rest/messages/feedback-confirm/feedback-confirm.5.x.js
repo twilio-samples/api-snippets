@@ -28,7 +28,7 @@ app.get('/confirm', (req, res) => {
       res.send('Thank you!');
       res.end();
     })
-    .catch(err => {
+    .catch((err) => {
       res.status(500);
       res.send(err.toString());
     })

@@ -13,4 +13,4 @@ client
     url: 'http://demo.twilio.com/docs/voice.xml',
     method: 'POST',
   })
-  .then(member => console.log(member.postion));
+  .then((member) => console.log(member.postion));

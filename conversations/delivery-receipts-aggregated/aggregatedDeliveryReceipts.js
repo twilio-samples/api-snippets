@@ -11,8 +11,9 @@ const undeliveredReceipts = aggregatedDeliveryReceipt?.undelivered;
 // get the amount of participants which have the status for the message
 const totalReceipts = aggregatedDeliveryReceipt?.total;
 
-if (undeliveredReceipts !== "none") {
-    // some delivery problems
-    alert(`Out of ${totalReceipts} sent messages, ${deliveredReceipts} were delivered, ${failedReceipts} have failed.`);
+if (undeliveredReceipts !== 'none') {
+  // some delivery problems
+  alert(
+    `Out of ${totalReceipts} sent messages, ${deliveredReceipts} were delivered, ${failedReceipts} have failed.`
+  );
 }
-

@@ -10,10 +10,10 @@ const client = new Twilio(accountSid, authToken);
 
 client.notify.services
   .list()
-  .then(services => {
-    services.forEach(service => console.log(service.identity));
+  .then((services) => {
+    services.forEach((service) => console.log(service.identity));
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   })
   .done();

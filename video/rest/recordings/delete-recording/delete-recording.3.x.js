@@ -12,6 +12,6 @@ const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 client.video
   .recordings('RTXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .remove()
-  .then(response => {
+  .then((response) => {
     console.log(response);
   });

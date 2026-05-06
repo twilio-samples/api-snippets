@@ -1,19 +1,19 @@
-const joinForm = document.getElementById("join");
-const roomName = document.getElementById("room");
-const participantIdentity = document.getElementById("identity");
-const participantsContainer = document.getElementById("participants");
+const joinForm = document.getElementById('join');
+const roomName = document.getElementById('room');
+const participantIdentity = document.getElementById('identity');
+const participantsContainer = document.getElementById('participants');
 
 const startRoom = async (event) => {
   // prevent a page reload when a user submits the form
   event.preventDefault();
   // hide the join form
-  joinForm.style.visibility = "hidden";
+  joinForm.style.visibility = 'hidden';
 
   // TODO: fetch an Access Token for this participant
   // from your Access Token server, or generate a token
   // and paste it here.
   // Learn more: https://www.twilio.com/docs/video/tutorials/user-identity-access-tokens
-  const token = "YOUR ACCESS TOKEN (JWT) HERE"
+  const token = 'YOUR ACCESS TOKEN (JWT) HERE';
 
   // join the video room with the token
   const room = await Twilio.Video.connect(token, {});
@@ -21,19 +21,19 @@ const startRoom = async (event) => {
   // render the local and remote participants' video and audio tracks
   handleConnectedParticipant(room.localParticipant);
   room.participants.forEach(handleConnectedParticipant);
-  room.on("participantConnected", handleConnectedParticipant);
+  room.on('participantConnected', handleConnectedParticipant);
 
   // handle cleanup when a participant disconnects by closing the browser window
-  room.on("participantDisconnected", handleDisconnectedParticipant);
-  window.addEventListener("pagehide", () => room.disconnect());
-  window.addEventListener("beforeunload", () => room.disconnect());
+  room.on('participantDisconnected', handleDisconnectedParticipant);
+  window.addEventListener('pagehide', () => room.disconnect());
+  window.addEventListener('beforeunload', () => room.disconnect());
 };
 
 const handleConnectedParticipant = (participant) => {
   // create a div for this participant's tracks and add it to
   // the main participants' div
-  const participantDiv = document.createElement("div");
-  participantDiv.setAttribute("id", participant.sid);
+  const participantDiv = document.createElement('div');
+  participantDiv.setAttribute('id', participant.sid);
   participantsContainer.appendChild(participantDiv);
 
   // iterate through the participant's published tracks and
@@ -43,8 +43,8 @@ const handleConnectedParticipant = (participant) => {
   });
 
   // listen for any new track publications
-  participant.on("trackPublished", (trackPublication) => {
-      handleTrackPublication(trackPublication, participant.sid);
+  participant.on('trackPublished', (trackPublication) => {
+    handleTrackPublication(trackPublication, participant.sid);
   });
 };
 
@@ -64,7 +64,7 @@ const handleTrackPublication = (trackPublication, participantSid) => {
   }
 
   // listen for any new subscriptions to this track publication
-  trackPublication.on("subscribed", displayTrack);
+  trackPublication.on('subscribed', displayTrack);
 };
 
 const handleDisconnectedParticipant = (participant) => {
@@ -75,4 +75,4 @@ const handleDisconnectedParticipant = (participant) => {
   participantDiv.remove();
 };
 
-joinForm.addEventListener("submit", startRoom);
+joinForm.addEventListener('submit', startRoom);

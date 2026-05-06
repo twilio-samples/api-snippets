@@ -12,6 +12,6 @@ client.sip.domains
     authType: 'IP_ACL',
     domainName: 'marlo.sip.twilio.com',
   })
-  .then(domain => {
+  .then((domain) => {
     process.stdout.write(domain.sid);
   });

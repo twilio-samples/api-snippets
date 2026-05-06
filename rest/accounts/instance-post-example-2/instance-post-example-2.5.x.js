@@ -8,4 +8,4 @@ const client = require('twilio')(accountSid, authToken);
 client.api
   .accounts('ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .update({ status: 'active' })
-  .then(account => console.log(account.status));
+  .then((account) => console.log(account.status));

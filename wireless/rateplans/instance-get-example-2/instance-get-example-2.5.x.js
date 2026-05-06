@@ -5,6 +5,9 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.wireless.ratePlans('us-automotive').fetch().then(response => {
-  console.log(response);
-});
+client.wireless
+  .ratePlans('us-automotive')
+  .fetch()
+  .then((response) => {
+    console.log(response);
+  });

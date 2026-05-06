@@ -60,7 +60,7 @@ const workspacePolicies = [
   buildWorkspacePolicy({ resources: ['**'], method: 'DELETE' }),
 ];
 
-eventBridgePolicies.concat(workspacePolicies).forEach(policy => {
+eventBridgePolicies.concat(workspacePolicies).forEach((policy) => {
   capability.addPolicy(policy);
 });
 

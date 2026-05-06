@@ -6,13 +6,14 @@ const Twilio = require('twilio').Twilio;
 const client = new Twilio(accountSid, authToken);
 const service = client.sync.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 
-service.syncMaps("Players")
+service
+  .syncMaps('Players')
   .update({
-    ttl: 864000 // expires in 10 days
+    ttl: 864000, // expires in 10 days
   })
-  .then(map => {
+  .then((map) => {
     console.log(map.dateExpires);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

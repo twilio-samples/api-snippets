@@ -10,20 +10,22 @@ const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
 
 const Twilio = require('twilio');
 
-const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {accountSid: ACCOUNT_SID});
+const client = new Twilio(API_KEY_SID, API_KEY_SECRET, {
+  accountSid: ACCOUNT_SID,
+});
 
-client.video.compositionHooks.
-    create({
-      friendlyName: 'MyFirstCompositionHook',
-      audioSources: '*',
-      videoLayout: {
-        grid : {
-          video_sources: ['*']
-        }
+client.video.compositionHooks
+  .create({
+    friendlyName: 'MyFirstCompositionHook',
+    audioSources: '*',
+    videoLayout: {
+      grid: {
+        video_sources: ['*'],
       },
-      statusCallback: 'http://my.server.org/callbacks',
-      format: 'mp4'
-    })
-  .then(compositionHook =>{
+    },
+    statusCallback: 'http://my.server.org/callbacks',
+    format: 'mp4',
+  })
+  .then((compositionHook) => {
     console.log('Created Composition Hook with SID=' + compositionHook.sid);
   });

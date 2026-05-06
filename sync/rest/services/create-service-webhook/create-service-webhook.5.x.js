@@ -10,9 +10,9 @@ client.sync.services
     friendlyName: 'MySyncServiceInstance',
     webhookUrl: 'http://example.com/sync',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

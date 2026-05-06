@@ -11,9 +11,9 @@ service.documents
     uniqueName: 'BoardLED',
     data: { led: 'OFF' },
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

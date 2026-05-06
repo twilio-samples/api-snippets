@@ -10,5 +10,5 @@ client.notify
   .services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .users('User0001')
   .remove()
-  .catch(error => console.log(error))
+  .catch((error) => console.log(error))
   .done();

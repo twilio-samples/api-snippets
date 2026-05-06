@@ -17,7 +17,7 @@ const version = 'v1';
 // By default, tokens are good for one hour.
 // Override this default timeout by specifiying a new value (in seconds).
 // For example, to generate a token good for 8 hours:
-const ttl = 28800;  // 60 * 60 * 8
+const ttl = 28800; // 60 * 60 * 8
 
 const capability = new TaskRouterCapability({
   accountSid: accountSid,
@@ -46,7 +46,7 @@ function buildWorkspacePolicy(options) {
 }
 
 const allowFetchSubresources = buildWorkspacePolicy({
-  resources: ['TaskQueue', taskqueueSid, '**']
+  resources: ['TaskQueue', taskqueueSid, '**'],
 });
 const allowUpdates = buildWorkspacePolicy({
   resources: ['TaskQueue', taskqueueSid],

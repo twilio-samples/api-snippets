@@ -10,4 +10,4 @@ client.monitor.v1.events
   .list({
     resourceSid: 'PN4aa51b930717ea83c91971b86d99018f',
   })
-  .then(response => console.log(response));
+  .then((response) => console.log(response));

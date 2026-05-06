@@ -8,10 +8,11 @@ const apiKeySecret = 'your_api_key_secret';
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const Twilio = require('twilio');
 
-const client = new Twilio(apiKeySid, apiKeySecret, {accountSid: accountSid});
+const client = new Twilio(apiKeySid, apiKeySecret, { accountSid: accountSid });
 
-client.video.compositions('CJXXXX').
-  remove()
-  .then(response =>{
+client.video
+  .compositions('CJXXXX')
+  .remove()
+  .then((response) => {
     console.log('Composition removed');
   });

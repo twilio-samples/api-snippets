@@ -12,4 +12,4 @@ client
     customerName: 'Customer 456',
     street: '2 Hasselhoff Lane',
   })
-  .then(address => console.log(address.customerName));
+  .then((address) => console.log(address.customerName));

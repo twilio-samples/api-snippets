@@ -6,6 +6,6 @@ const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
 
-client.applications.each({ friendlyName: 'MyApp' }, app =>
+client.applications.each({ friendlyName: 'MyApp' }, (app) =>
   console.log(app.VoiceUrl)
 );

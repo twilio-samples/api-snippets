@@ -5,12 +5,12 @@ const dial = response.dial();
 const client = dial.client();
 client.identity('user_jane');
 client.parameter({
-    name: 'FirstName',
-    value: 'Jane'
+  name: 'FirstName',
+  value: 'Jane',
 });
 client.parameter({
-    name: 'LastName',
-    value: 'Doe'
+  name: 'LastName',
+  value: 'Doe',
 });
 
 console.log(response.toString());

@@ -9,9 +9,9 @@ client.preview.deployed_devices.fleets
   .create({
     friendlyName: 'My Fleet of Devices',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

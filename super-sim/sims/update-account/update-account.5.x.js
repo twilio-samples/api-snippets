@@ -5,6 +5,7 @@ const accountSid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const authToken = 'your_auth_token';
 const client = require('twilio')(accountSid, authToken);
 
-client.supersim.sims('HSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-               .update({accountSid: 'ACbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'})
-               .then(sim => console.log(sim.accountSid));
+client.supersim
+  .sims('HSXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  .update({ accountSid: 'ACbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb' })
+  .then((sim) => console.log(sim.accountSid));

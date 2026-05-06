@@ -10,11 +10,11 @@ service.documents
   .create({
     uniqueName: 'MyFirstDocument',
     data: { firstName: 'Alice' },
-    ttl: 1814400 // expires in 21 days
+    ttl: 1814400, // expires in 21 days
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

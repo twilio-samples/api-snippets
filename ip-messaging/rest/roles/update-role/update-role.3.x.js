@@ -9,13 +9,13 @@ const service = client.chat.services('ISXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
 service
   .roles('RLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   .fetch()
-  .then(role => {
+  .then((role) => {
     const newPermissions = ['sendMediaMessage'].concat(role.permissions || []);
     return role.update({ permission: newPermissions });
   })
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

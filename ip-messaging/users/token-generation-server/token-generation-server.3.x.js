@@ -34,7 +34,7 @@ app.get('/token', (request, response) => {
     process.env.TWILIO_ACCOUNT_SID,
     process.env.TWILIO_API_KEY,
     process.env.TWILIO_API_SECRET,
-    {identity: identity}
+    { identity: identity }
   );
   token.addGrant(chatGrant);
 

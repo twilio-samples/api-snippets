@@ -11,6 +11,6 @@ client.fax.v1.faxes
     from: 'Jack',
     mediaUrl: 'https://www.twilio.com/docs/documents/25/justthefaxmaam.pdf',
   })
-  .then(response => {
+  .then((response) => {
     console.log(response.sid);
   });

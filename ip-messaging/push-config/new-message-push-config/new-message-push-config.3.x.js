@@ -21,9 +21,9 @@ const notifications = {
 };
 service
   .update(notifications)
-  .then(response => {
+  .then((response) => {
     console.log(response);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
   });

@@ -10,6 +10,6 @@ client.sip
   .ipAccessControlListMappings.create({
     ipAccessControlListSid: 'AL95a47094615fe05b7c17e62a7877836c',
   })
-  .then(ipAccessControlListMapping => {
+  .then((ipAccessControlListMapping) => {
     process.stdout.write(ipAccessControlListMapping.sid);
   });

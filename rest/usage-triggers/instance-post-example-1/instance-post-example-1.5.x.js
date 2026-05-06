@@ -11,4 +11,4 @@ client.usage
     friendlyName: 'Monthly Maximum Call Usage',
     callbackUrl: 'https://www.example.com/monthly-usage-trigger',
   })
-  .then(trigger => console.log(trigger.dateFired));
+  .then((trigger) => console.log(trigger.dateFired));

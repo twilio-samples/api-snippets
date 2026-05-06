@@ -13,4 +13,4 @@ client.taskrouter.v1
   .update({
     friendlyName: 'NewAvailableFriendlyName',
   })
-  .then(activity => console.log(activity.friendlyName));
+  .then((activity) => console.log(activity.friendlyName));

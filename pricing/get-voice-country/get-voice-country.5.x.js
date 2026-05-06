@@ -9,12 +9,12 @@ const client = require('twilio')(accountSid, authToken).pricing;
 client.voice
   .countries('EE')
   .fetch()
-  .then(country => {
-    country.inboundCallPrices.forEach(price => {
+  .then((country) => {
+    country.inboundCallPrices.forEach((price) => {
       console.log(`${price.number_type} ${price.current_price}`);
     });
   })
-  .catch(error => {
+  .catch((error) => {
     console.log(error);
     throw error;
   });

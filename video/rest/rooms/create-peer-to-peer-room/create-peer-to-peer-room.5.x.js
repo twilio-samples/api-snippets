@@ -16,6 +16,6 @@ client.video.rooms
     enableTurn: 'false',
     statusCallback: 'http://example.org',
   })
-  .then(room => {
+  .then((room) => {
     console.log(room.sid);
   });

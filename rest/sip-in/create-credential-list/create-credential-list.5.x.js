@@ -9,6 +9,6 @@ client.sip.credentialLists
   .create({
     friendlyName: 'Low Rises',
   })
-  .then(credentialList => {
+  .then((credentialList) => {
     process.stdout.write(credentialList.sid);
   });

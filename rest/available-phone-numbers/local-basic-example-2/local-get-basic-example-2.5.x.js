@@ -11,10 +11,10 @@ client
   .local.list({
     contains: '510555****',
   })
-  .then(availablePhoneNumbers => {
+  .then((availablePhoneNumbers) => {
     const number = availablePhoneNumbers[0];
     return client.incomingPhoneNumbers.create({
       phoneNumber: number.phoneNumber,
     });
   })
-  .then(purchasedNumber => console.log(purchasedNumber.sid));
+  .then((purchasedNumber) => console.log(purchasedNumber.sid));
