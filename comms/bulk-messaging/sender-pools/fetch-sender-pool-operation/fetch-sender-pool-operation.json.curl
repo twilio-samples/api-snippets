@@ -1,2 +1,2 @@
-curl -X GET "https://comms.twilio.com/v1/SenderPools/Operations/comms_operation_01h9krwprkeee8fzqspvwy6nq8" \
--u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
+curl -X GET "https://comms.twilio.com/v1/SenderPools/Operations?startDate=2026-05-01T00:00:00Z&endDate=2026-05-01T00:00:00Z&pageSize=100" \
+     -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
