@@ -5,7 +5,7 @@ import com.twilio.twiml.TwiMLException;
 
 public class Example {
     public static void main(String[] args) {
-        Play play = new Play.Builder("").digits("wwww3").build();
+        Play play = new Play.Builder("").digits("www3").build();
         VoiceResponse response = new VoiceResponse.Builder().play(play).build();
 
         try {

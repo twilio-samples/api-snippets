@@ -2,7 +2,7 @@ const VoiceResponse = require('twilio').twiml.VoiceResponse;
 
 const response = new VoiceResponse();
 response.play({
-  digits: 'wwww3',
+  digits: 'www3',
 });
 
 console.log(response.toString());
