@@ -1,0 +1,2 @@
+curl -X GET 'https://audiences.twilio.com/preview/Cohorts?storeType=TWILIO&storeId=mem_store_01h9d8r0vte3hz8tykdj329t7r&labels=region%3Aus&pageSize=20' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

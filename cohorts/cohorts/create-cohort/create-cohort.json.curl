@@ -1,0 +1,14 @@
+curl -X POST 'https://audiences.twilio.com/preview/Cohorts' \
+--header 'Content-Type: application/json' \
+--data '{
+  "displayName": "Active US Adults",
+  "description": "US-based adults with email who have been active in the last 30 days",
+  "storeType": "TWILIO",
+  "storeId": "mem_store_01h9d8r0vte3hz8tykdj329t7r",
+  "criteria": "profile.trait.Contact.age >= 18 && profile.trait.Contact.country == \"US\"",
+  "labels": {
+    "region": "us",
+    "status": "active"
+  }
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
