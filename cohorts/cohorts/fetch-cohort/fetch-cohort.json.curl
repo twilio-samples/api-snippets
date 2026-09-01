@@ -1,0 +1,2 @@
+curl -X GET 'https://audiences.twilio.com/preview/Cohorts/cmp_cohort_01h9d8r0vte3hz8tykdj329t7r' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN

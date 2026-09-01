@@ -1,0 +1,15 @@
+curl -X POST 'https://audiences.twilio.com/preview/CohortSnapshots' \
+--header 'Content-Type: application/json' \
+--data '{
+  "source": {
+    "cohortId": "cmp_cohort_01h9d8r0vte3hz8tykdj329t7r"
+  },
+  "variables": [
+    {
+      "expression": "profile.address.email",
+      "displayName": "email"
+    }
+  ],
+  "profileLimit": 50
+}' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN
